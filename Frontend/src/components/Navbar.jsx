@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../img/logo.svg";
 export default function Navbar() {
   return (
     <>
@@ -8,7 +9,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="pt-2">
-            <img src="./src/img/logo.svg" alt="" />
+            <img src={logo} alt="" />
           </div>
           <div className="hidden md:flex space-x-6">
             <NavLink
