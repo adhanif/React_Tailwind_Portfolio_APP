@@ -1,5 +1,12 @@
 import React from "react";
 
+import logowhite from "../img/logowhite.svg";
+import facebook from "../img/icon-facebook.svg";
+import youtube from "../img/icon-youtube.svg";
+import twitter from "../img/icon-twitter.svg";
+import pinterest from "../img/icon-pinterest.svg";
+import instagram from "../img/icon-instagram.svg";
+
 export default function Footer() {
   return (
     <>
@@ -7,34 +14,22 @@ export default function Footer() {
         <div className="container flex flex-col justify-between mx-auto px-8 space-y-8 py-10  lg:flex-row  md:space-y-0  ">
           {/* logo container  */}
           <div className="flex flex-col space-y-12 md:mb-8">
-            <img src="./src/img/logo-white.svg" alt="" className="lg:h-8 " />
+            <img src={logowhite} alt="" className="lg:h-8 " />
             <div className="flex justify-center space-x-4 ">
               <a href="" className="hover:scale-125">
-                <img
-                  src="./src/img/icon-facebook.svg"
-                  alt=""
-                  className="h-8  "
-                />
+                <img src={facebook} alt="" className="h-8  " />
               </a>
               <a href="" className="hover:scale-125">
-                <img src="./src/img/icon-youtube.svg" alt="" className="h-8" />
+                <img src={youtube} alt="" className="h-8" />
               </a>
               <a href="" className="hover:scale-125">
-                <img src="./src/img/icon-twitter.svg" alt="" className="h-8" />
+                <img src={twitter} alt="" className="h-8" />
               </a>
               <a href="" className="hover:scale-125">
-                <img
-                  src="./src/img/icon-pinterest.svg"
-                  alt=""
-                  className="h-8"
-                />
+                <img src={pinterest} alt="" className="h-8" />
               </a>
               <a href="" className="hover:scale-125">
-                <img
-                  src="./src/img/icon-instagram.svg"
-                  alt=""
-                  className="h-8"
-                />
+                <img src={instagram} alt="" className="h-8" />
               </a>
             </div>
           </div>

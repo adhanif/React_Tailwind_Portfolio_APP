@@ -1,5 +1,5 @@
 import React from "react";
-
+import hero from "../img/hero.jpg";
 export default function HeroSection() {
   return (
     <>
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
         {/* image  */}
         <div className=" sm:w-1/2  md:w-full lg:w-full ">
-          <img src="./src/img/hero.jpg" alt="" className="w-full  md:w-full " />
+          <img src={hero} alt="" className="w-full  md:w-full " />
         </div>
       </div>
     </>
