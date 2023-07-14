@@ -7,22 +7,34 @@ export default function Footer() {
         <div className="container flex flex-col justify-between mx-auto px-8 space-y-8 py-10  lg:flex-row  md:space-y-0  ">
           {/* logo container  */}
           <div className="flex flex-col space-y-12 md:mb-8">
-            <img src="src/img/logo-white.svg" alt="" className="lg:h-8 " />
+            <img src="./src/img/logo-white.svg" alt="" className="lg:h-8 " />
             <div className="flex justify-center space-x-4 ">
               <a href="" className="hover:scale-125">
-                <img src="src/img/icon-facebook.svg" alt="" className="h-8  " />
+                <img
+                  src="./src/img/icon-facebook.svg"
+                  alt=""
+                  className="h-8  "
+                />
               </a>
               <a href="" className="hover:scale-125">
-                <img src="src/img/icon-youtube.svg" alt="" className="h-8" />
+                <img src="./src/img/icon-youtube.svg" alt="" className="h-8" />
               </a>
               <a href="" className="hover:scale-125">
-                <img src="src/img/icon-twitter.svg" alt="" className="h-8" />
+                <img src="./src/img/icon-twitter.svg" alt="" className="h-8" />
               </a>
               <a href="" className="hover:scale-125">
-                <img src="src/img/icon-pinterest.svg" alt="" className="h-8" />
+                <img
+                  src="./src/img/icon-pinterest.svg"
+                  alt=""
+                  className="h-8"
+                />
               </a>
               <a href="" className="hover:scale-125">
-                <img src="src/img/icon-instagram.svg" alt="" className="h-8" />
+                <img
+                  src="./src/img/icon-instagram.svg"
+                  alt=""
+                  className="h-8"
+                />
               </a>
             </div>
           </div>

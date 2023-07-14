@@ -15,7 +15,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/html5.svg"
+            src="./src/img/html5.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4 mt-5">
@@ -34,7 +34,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/css3.svg"
+            src="./src/img/css3.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
@@ -55,7 +55,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/javascript-1.svg"
+            src="./src/img/javascript-1.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
@@ -77,7 +77,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/react.svg"
+            src="./src/img/react.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
@@ -97,7 +97,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/node-js.svg"
+            src="./src/img/node-js.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
@@ -116,7 +116,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/tailwindcss.svg"
+            src="./src/img/tailwindcss.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
@@ -138,7 +138,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/bootstrap.svg"
+            src="./src/img/bootstrap.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
@@ -157,7 +157,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/material-ui.svg"
+            src="./src/img/material-ui.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
@@ -178,7 +178,7 @@ export default function SkillSection() {
         >
           <img
             className="w-full h-24 pt-5"
-            src="src/img/mongodb.svg"
+            src="./src/img/mongodb.svg"
             alt="Sunset in the mountains"
           />
           <div className="px-6 py-4">
