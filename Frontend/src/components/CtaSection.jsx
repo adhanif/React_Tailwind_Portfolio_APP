@@ -10,6 +10,8 @@ export default function CtaSection() {
             Team Work makes dream work
           </h1>
           <button className="p-3 w-32 pt-2   text-red-900 bg-white rounded-full  hover:bg-red-100 hover:scale-110">
+
+         
             {" "}
             Read more
           </button>
