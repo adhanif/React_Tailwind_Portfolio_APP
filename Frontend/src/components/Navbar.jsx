@@ -13,30 +13,40 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-6">
             <NavLink
               to="#"
-              className="hover:text-darkGrayishBlue font-bold text-xl"
+
+              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
+
+              
             >
               Home
             </NavLink>
             <NavLink
               to="#"
-              className="hover:text-darkGrayishBlue font-medium text-xl"
+
+              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
+
             >
               About me
             </NavLink>
             <NavLink
               to="#"
-              className="hover:text-darkGrayishBlue font-medium text-xl"
+
+              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
+
             >
               Skills
             </NavLink>
             <NavLink
               to="#"
-              className="hover:text-darkGrayishBlue font-medium text-xl"
+
+              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
             >
-              Contact
+             Contact
             </NavLink>
           </div>
-          <button className="hidden md:block w-32  p-2  text-white bg-red-900 rounded-full text-center hover:bg-brightRedLight">
+          <button className="hidden md:block   p-2  text-white bg-red-900 rounded-full text-center hover:bg-brightRedLigh focus:outline-none hover:scale-110">
+
+      
             {" "}
             Contact me
           </button>
