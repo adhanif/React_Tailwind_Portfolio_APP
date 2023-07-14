@@ -9,7 +9,7 @@ export default function CtaSection() {
           <h1 className="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
             Team Work makes dream work
           </h1>
-          <button className="p-3 w-32 pt-2   text-red-900 bg-white rounded-full  hover:bg-red-100 ">
+          <button className="p-3 w-32 pt-2   text-red-900 bg-white rounded-full  hover:bg-brightRedLight ">
             {" "}
             Read more
           </button>
