@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import SkillSection from "./components/SkillSection";
 import CtaSection from "./components/CtaSection";
 import Footer from "./components/Footer";
+import Aboutme from "./components/Aboutme";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<HeroSection />} />
         <Route path="/skills" element={<SkillSection />} />
-        {/* // <Route path="/signUp" element={</>} /> */}
+        <Route path="/aboutme" element={<Aboutme />} />
       </Routes>
 
       <CtaSection />

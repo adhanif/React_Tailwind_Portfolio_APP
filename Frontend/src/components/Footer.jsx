@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 import logowhite from "../img/logowhite.svg";
 import facebook from "../img/icon-facebook.svg";
 import youtube from "../img/icon-youtube.svg";
@@ -35,18 +35,34 @@ export default function Footer() {
           </div>
           <div className="flex flex-row justify-around space-x-40 ">
             <div className="flex flex-col space-y-3 text-white ">
-              <a href="" className="hover:text-brightRed hover:scale-">
+              <NavLink to="/home" className="hover:text-brightRed hover:scale-">
+                {" "}
                 Home
-              </a>
-              <a href="" className="hover:text-brightRed hover:scale-110">
-                About me
-              </a>
-              <a href="" className="hover:text-brightRed hover:scale-110">
-                Skills
-              </a>
-              <a href="" className="hover:text-brightRed hover:scale-110">
-                Contact
-              </a>
+              </NavLink>
+
+              <div className="flex flex-col space-y-3 text-white ">
+                <NavLink
+                  to="/aboutme"
+                  className="hover:text-brightRed hover:scale-"
+                >
+                  {" "}
+                  About me
+                </NavLink>
+                <NavLink
+                  to="/skills"
+                  className="hover:text-brightRed hover:scale-"
+                >
+                  {" "}
+                  Skills
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  className="hover:text-brightRed hover:scale-"
+                >
+                  {" "}
+                  Contact
+                </NavLink>
+              </div>
             </div>
             {/*  */}
             <div className="flex flex-col space-y-3 text-white  md:mb-20">
