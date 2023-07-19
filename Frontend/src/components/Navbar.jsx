@@ -31,7 +31,7 @@ export default function Navbar() {
               Skills
             </NavLink>
             <NavLink
-              to="/Contact"
+              to="/contact"
               className="hover:text-red-900 hover:scale-110 font-bold text-xl"
             >
               Contact
