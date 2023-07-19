@@ -6,16 +6,17 @@ import SkillSection from "./components/SkillSection";
 import CtaSection from "./components/CtaSection";
 import Footer from "./components/Footer";
 import Aboutme from "./components/Aboutme";
-
+import ContactMe from "./components/ContactMe";
 function App() {
   return (
     <>
       <Navbar />
 
       <Routes>
-        <Route path="/home" element={<HeroSection />} />
+        <Route path="/" element={<HeroSection />} />
         <Route path="/skills" element={<SkillSection />} />
         <Route path="/aboutme" element={<Aboutme />} />
+        <Route path="/contact" element={<ContactMe />} />
       </Routes>
 
       <CtaSection />
