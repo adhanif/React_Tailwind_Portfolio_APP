@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-row justify-around space-x-40 ">
             <div className="flex flex-col space-y-3 text-white ">
-              <NavLink to="/home" className="hover:text-brightRed hover:scale-">
+              <NavLink to="/" className="hover:text-brightRed hover:scale-">
                 {" "}
                 Home
               </NavLink>
