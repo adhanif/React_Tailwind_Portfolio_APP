@@ -90,7 +90,7 @@ export default function Footer() {
               </button>
             </div>
             <div className="text-white text-center">
-              Copyright &copy; 2022, All Rights Reserved
+              Copyright &copy; 2023, All Rights Reserved
             </div>
           </div>
         </div>
