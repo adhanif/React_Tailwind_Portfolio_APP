@@ -13,25 +13,25 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex space-x-6">
             <NavLink
-              to="#"
+              to="/home"
               className="hover:text-red-900 hover:scale-110 font-bold text-xl"
             >
               Home
             </NavLink>
             <NavLink
-              to="#"
+              to="/About me"
               className="hover:text-red-900 hover:scale-110 font-bold text-xl"
             >
               About me
             </NavLink>
             <NavLink
-              to="#"
+              to="/skills"
               className="hover:text-red-900 hover:scale-110 font-bold text-xl"
             >
               Skills
             </NavLink>
             <NavLink
-              to="#"
+              to="/Contact"
               className="hover:text-red-900 hover:scale-110 font-bold text-xl"
             >
               Contact
