@@ -19,7 +19,7 @@ export default function Navbar() {
               Home
             </NavLink>
             <NavLink
-              to="/About me"
+              to="/aboutme"
               className="hover:text-red-900 hover:scale-110 font-bold text-xl"
             >
               About me
