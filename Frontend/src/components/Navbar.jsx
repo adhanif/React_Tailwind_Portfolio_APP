@@ -37,7 +37,8 @@ export default function Navbar() {
               Contact
             </NavLink>
           </div>
-          <button className="hidden md:block   p-2  text-white bg-red-900 rounded-full text-center hover:bg-brightRedLigh focus:outline-none hover:scale-110">
+
+          <button className=" hidden md:block p-3 w-32 pt-2   text-white font-medium bg-red-900 rounded-full  hover:bg-brightRedLight  hover:scale-110 ">
             {" "}
             Contact me
           </button>

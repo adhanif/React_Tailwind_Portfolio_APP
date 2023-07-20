@@ -3,9 +3,9 @@ import hero from "../img/hero.jpg";
 export default function HeroSection() {
   return (
     <>
-      <div className="container flex flex-col-reverse items-center item px-8 mx-auto mt-10 space-y-0  lg:flex-row md:space-y-0 ">
-        <div className="flex flex-col  mr-11 space-y-12  lg:w-1/2  md:mt-10">
-          <h1 className="max-w-2xl text-5xl font-bold text-center md:text-5xl  md:text-left  sm:text-4xl sm:mt-4 sm:text-center md:mt-0">
+      <div className="container flex flex-col-reverse items-center  text-center px-8 mx-auto mt-10 space-y-8  lg:flex-row md:space-y-0 ">
+        <div className="flex flex-col  text-center  space-y-12 pr-0 md:pr-5 lg:w-1/2  md:mt-10">
+          <h1 className=" text-3xl font-bold text-center  md:text-5xl  md:text-left  sm:text-4xl ">
             Render ideas to perfection and make visible what yet to come
           </h1>
           <p className="text-center md:text-left">
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
         {/* image  */}
         <div className=" sm:w-1/2  md:w-full lg:w-full ">
-          <img src={hero} alt="" className="w-full  md:w-full " />
+          <img src={hero} alt="" className="w-full mb-6 md:mb-0 md:w-full " />
         </div>
       </div>
     </>
