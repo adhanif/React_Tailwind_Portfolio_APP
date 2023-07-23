@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Bars3Icon, BeakerIcon } from "@heroicons/react/24/solid";
 export default function Navbar() {
   return (
     <>
@@ -10,6 +11,12 @@ export default function Navbar() {
           <div className="pt-2">
             <img src="src/img/logo.svg" alt="" />
           </div>
+
+          {/* Menu icons  */}
+          <div className="absolute right-8 hidden lg:flex">
+            <Bars3Icon className="h-7 w-7 text-black" />
+          </div>
+
           <div className="hidden md:flex space-x-6">
             <NavLink
               to="#"
