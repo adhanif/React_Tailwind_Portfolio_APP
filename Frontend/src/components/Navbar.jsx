@@ -4,7 +4,7 @@ import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
-
+  const menuItems = ["Home", "About me", "Skills", "Contact me"];
   function handleClick() {
     setIsDiplayed(!isDiplayed);
   }
@@ -13,7 +13,7 @@ export default function Navbar() {
     <>
       <nav className="relative container  mx-auto p-8 text-black">
         {/* Flex container  */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row   justify-between md:items-center">
           {/* Logo */}
           <div className="pt-2">
             <img src="src/img/logo.svg" alt="" />
@@ -31,33 +31,25 @@ export default function Navbar() {
             )}
           </div>
 
-          <div className="hidden md:flex space-x-6">
-            <NavLink
-              to="#"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="#"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              About me
-            </NavLink>
-            <NavLink
-              to="#"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              Skills
-            </NavLink>
-            <NavLink
-              to="#"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              Contatc me
-            </NavLink>
+          <div
+            className={`flex flex-col md:flex-row md:space-x-6 lg:space-x-10 translate-all  Z-[-1] md:Z-auto duration-700 ease-in ${
+              !isDiplayed ? "top-12 hidden md:flex" : "top-[-490px]"
+            }`}
+          >
+            {menuItems.map((item) => {
+              return (
+                <div className="my-5 lg:my-0 md:pl-0">
+                  <NavLink
+                    // to="#"
+                    className="hover:text-red-900 hover:scale-110 font-bold text-xl  "
+                  >
+                    {item}
+                  </NavLink>
+                </div>
+              );
+            })}
           </div>
-          <button className="hidden md:block   p-2  text-white bg-red-900 rounded-full text-center hover:bg-brightRedLigh focus:outline-none hover:scale-110">
+          <button className="hidden   md:block p-2  text-white bg-red-900 rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110">
             {" "}
             Contact me
           </button>
