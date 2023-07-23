@@ -42,7 +42,7 @@ export default function Footer() {
 
               <div className="flex flex-col space-y-3 text-white ">
                 <NavLink
-                  to="/aboutme"
+                  to="/about"
                   className="hover:text-brightRed hover:scale-"
                 >
                   {" "}

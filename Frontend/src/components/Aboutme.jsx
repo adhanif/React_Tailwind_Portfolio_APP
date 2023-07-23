@@ -1,6 +1,6 @@
 import React from "react";
 import portrait from "../img/portrait.jpg";
-
+import JobCard from "./JobCard";
 export default function Aboutme() {
   return (
     <>
@@ -23,7 +23,7 @@ export default function Aboutme() {
             />
           </div>
           <div className=" md:w-full ">
-            <p className="text-base md:text-2xl  ">
+            <p className="text-base md:text-2xl  text-center md:text-left">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
               quaerat, cum quibusdam tenetur quasi explicabo dolor, illo, natus
               a deleniti enim optio assumenda fugiat dicta totam ad expedita
@@ -39,47 +39,32 @@ export default function Aboutme() {
         </div>
       </div>
       <div className="container grid grid-cols-6 gap-10  items-center px-8 mx-auto mt-20 mb-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-100 bg-opacity-75 duration-300 ease-in-out hover:scale-110">
-          <div className="px-6 py-4">
-            <h1 className="font-bold text-2xl mb-4">Freelancer</h1>
-            <p className="mb-6 font-bold text-sm text-gray-700">
-              Full Stack Developer
-            </p>
-            <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-        </div>
+        {/* 1st card  */}
+        <JobCard
+          job={"Freelancer"}
+          position={"Full Stack Developer"}
+          detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptatibus quia, nulla! Maiores et perferendis eaque,
+          exercitationem praesentium nihil.`}
+        />
+
         {/* 2nd card  */}
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-100 bg-opacity-75 duration-300 ease-in-out hover:scale-110">
-          <div className="px-6 py-4">
-            <h1 className="font-bold text-2xl mb-4">Designer ABC</h1>
-            <p className="mb-6 font-bold text-sm text-gray-700">
-              Front End Developer
-            </p>
-            <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-        </div>
+        <JobCard
+          job={"Designer ABC"}
+          position={"Front End Developer"}
+          detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptatibus quia, nulla! Maiores et perferendis eaque,
+          exercitationem praesentium nihil.`}
+        />
+
         {/* 3rd card  */}
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-100 bg-opacity-75 duration-300 ease-in-out hover:scale-110">
-          <div className="px-6 py-4">
-            <h1 className="font-bold text-2xl mb-4">Webworks</h1>
-            <p className="mb-6 font-bold text-sm text-gray-700">
-              Back End Developer
-            </p>
-            <p className="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
-            </p>
-          </div>
-        </div>
+        <JobCard
+          job={"Webworks"}
+          position={"Back End Developer"}
+          detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptatibus quia, nulla! Maiores et perferendis eaque,
+          exercitationem praesentium nihil.`}
+        />
       </div>
     </>
   );
