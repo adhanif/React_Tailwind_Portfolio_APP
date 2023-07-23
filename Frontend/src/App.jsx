@@ -15,7 +15,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HeroSection />} />
-        <Route path="/aboutme" element={<Aboutme />} />
+        <Route path="/about" element={<Aboutme />} />
         <Route path="/skills" element={<SkillSection />} />
         <Route path="/contact" element={<ContactMe />} />
       </Routes>

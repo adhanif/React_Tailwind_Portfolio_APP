@@ -10,8 +10,8 @@ export default function Navbar() {
   // const menuItems = ["Home", "About me", "Skills", "Contact me"];
   const menuItems = [
     { Home: "/" },
-    { About: "About me" },
-    { Skills: "Skills" },
+    { About: "about" },
+    { Skills: "skills" },
     { Contact: "contact" },
   ];
 
@@ -62,7 +62,6 @@ export default function Navbar() {
             })}
           </div>
           <button className="hidden   md:block p-2  text-white bg-red-900 rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110">
-
             {" "}
             Contact me
           </button>
