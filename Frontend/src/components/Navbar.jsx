@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
@@ -7,7 +7,7 @@ import logo from "../img/logo.svg";
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
-  // const menuItems = ["Home", "About me", "Skills", "Contact me"];
+  const navigate = useNavigate();
   const menuItems = [
     { Home: "/" },
     { About: "about" },
@@ -61,7 +61,12 @@ export default function Navbar() {
               );
             })}
           </div>
-          <button className="hidden   md:block p-2  text-white bg-red-900 rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110">
+          <button
+            className="hidden   md:block p-2  text-white bg-red-900 rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
             {" "}
             Contact me
           </button>
