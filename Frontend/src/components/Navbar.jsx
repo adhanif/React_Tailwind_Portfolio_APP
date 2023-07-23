@@ -4,8 +4,13 @@ import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
-  const menuItems = ["Home", "About me", "Skills", "Contact me"];
-  // const menuItems = [{Home:"/"}, {About me: "About me"}, "Skills", "Contact me"];
+  // const menuItems = ["Home", "About me", "Skills", "Contact me"];
+  const menuItems = [
+    { Home: "/" },
+    { About: "About me" },
+    { Skills: "Skills" },
+    { Contact: "contact" },
+  ];
 
   function handleClick() {
     setIsDiplayed(!isDiplayed);
@@ -39,13 +44,15 @@ export default function Navbar() {
             }`}
           >
             {menuItems.map((item) => {
+              const key = Object.keys(item)[0];
               return (
-                <div className="my-5 lg:my-0 md:pl-0">
+                <div className="my-5 lg:my-0 md:pl-0" key={key}>
                   <NavLink
-                    // to=`${/{item}}`
+                    to={Object.values(item)[0]}
                     className="hover:text-red-900 hover:scale-110 font-bold text-xl  "
                   >
-                    {item}
+                    {Object.keys(item)[0]}
+                    {/* {item} */}
                   </NavLink>
                 </div>
               );

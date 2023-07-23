@@ -12,10 +12,13 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HeroSection />} />
-        <Route element={<SkillSection />} />
-        <Route element={<CtaSection />} />
-        <Route element={<Footer />} />
+        {/* <Route path="/aboutme" element={<Aboutme />} /> */}
+        <Route path="/skills" element={<SkillSection />} />
+        {/* <Route path="/contact" element={<ContactMe />} /> */}
       </Routes>
+
+      <CtaSection />
+      <Footer />
     </>
   );
 }
