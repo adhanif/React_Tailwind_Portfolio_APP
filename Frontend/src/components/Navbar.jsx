@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Bars3Icon, BeakerIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
+
 export default function Navbar() {
+  const [isDiplayed, setIsDiplayed] = useState(false);
+
+  function handleClick() {
+    setIsDiplayed(!isDiplayed);
+  }
+
   return (
     <>
       <nav className="relative container  mx-auto p-8 text-black">
@@ -13,8 +20,15 @@ export default function Navbar() {
           </div>
 
           {/* Menu icons  */}
-          <div className="absolute right-8 hidden lg:flex">
-            <Bars3Icon className="h-7 w-7 text-black" />
+          <div
+            onClick={handleClick}
+            className="absolute right-8 cursor-pointer md:hidden "
+          >
+            {isDiplayed ? (
+              <XMarkIcon className="h-7 w-7 text-black" />
+            ) : (
+              <Bars3Icon className="h-7 w-7 text-black" />
+            )}
           </div>
 
           <div className="hidden md:flex space-x-6">
