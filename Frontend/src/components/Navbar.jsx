@@ -5,6 +5,8 @@ import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
   const menuItems = ["Home", "About me", "Skills", "Contact me"];
+  // const menuItems = [{Home:"/"}, {About me: "About me"}, "Skills", "Contact me"];
+
   function handleClick() {
     setIsDiplayed(!isDiplayed);
   }
@@ -40,7 +42,7 @@ export default function Navbar() {
               return (
                 <div className="my-5 lg:my-0 md:pl-0">
                   <NavLink
-                    // to="#"
+                    // to=`${/{item}}`
                     className="hover:text-red-900 hover:scale-110 font-bold text-xl  "
                   >
                     {item}
