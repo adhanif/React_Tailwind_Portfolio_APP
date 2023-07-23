@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
+
+import logo from "../img/logo.svg";
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
@@ -23,7 +26,7 @@ export default function Navbar() {
         <div className="flex flex-col md:flex-row   justify-between md:items-center">
           {/* Logo */}
           <div className="pt-2">
-            <img src="src/img/logo.svg" alt="" />
+            <img src={logo} alt="" />
           </div>
 
           {/* Menu icons  */}
@@ -59,6 +62,7 @@ export default function Navbar() {
             })}
           </div>
           <button className="hidden   md:block p-2  text-white bg-red-900 rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110">
+
             {" "}
             Contact me
           </button>
