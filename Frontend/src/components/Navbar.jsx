@@ -1,44 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+
+import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
+
 import logo from "../img/logo.svg";
+
 export default function Navbar() {
+  const [isDiplayed, setIsDiplayed] = useState(false);
+  // const menuItems = ["Home", "About me", "Skills", "Contact me"];
+  const menuItems = [
+    { Home: "/" },
+    { About: "About me" },
+    { Skills: "Skills" },
+    { Contact: "contact" },
+  ];
+
+  function handleClick() {
+    setIsDiplayed(!isDiplayed);
+  }
+
   return (
     <>
       <nav className="relative container  mx-auto p-8 text-black">
         {/* Flex container  */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row   justify-between md:items-center">
           {/* Logo */}
           <div className="pt-2">
             <img src={logo} alt="" />
           </div>
-          <div className="hidden md:flex space-x-6">
-            <NavLink
-              to="/"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/aboutme"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              About me
-            </NavLink>
-            <NavLink
-              to="/skills"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              Skills
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="hover:text-red-900 hover:scale-110 font-bold text-xl"
-            >
-              Contact
-            </NavLink>
+
+          {/* Menu icons  */}
+          <div
+            onClick={handleClick}
+            className="absolute right-8 cursor-pointer md:hidden "
+          >
+            {isDiplayed ? (
+              <XMarkIcon className="h-7 w-7 text-black" />
+            ) : (
+              <Bars3Icon className="h-7 w-7 text-black" />
+            )}
           </div>
 
-          <button className=" hidden md:block p-3 w-32 pt-2   text-white font-medium bg-red-900 rounded-full  hover:bg-brightRedLight  hover:scale-110 ">
+          <div
+            className={`flex flex-col md:flex-row md:space-x-6 lg:space-x-10 translate-all  Z-[-1] md:Z-auto duration-700 ease-in ${
+              !isDiplayed ? "top-12 hidden md:flex" : "top-[-490px]"
+            }`}
+          >
+            {menuItems.map((item) => {
+              const key = Object.keys(item)[0];
+              return (
+                <div className="my-5 lg:my-0 md:pl-0" key={key}>
+                  <NavLink
+                    to={Object.values(item)[0]}
+                    className="hover:text-red-900 hover:scale-110 font-bold text-xl  "
+                  >
+                    {Object.keys(item)[0]}
+                    {/* {item} */}
+                  </NavLink>
+                </div>
+              );
+            })}
+          </div>
+          <button className="hidden   md:block p-2  text-white bg-red-900 rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110">
+
             {" "}
             Contact me
           </button>

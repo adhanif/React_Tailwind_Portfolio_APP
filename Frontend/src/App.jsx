@@ -7,6 +7,7 @@ import CtaSection from "./components/CtaSection";
 import Footer from "./components/Footer";
 import Aboutme from "./components/Aboutme";
 import ContactMe from "./components/ContactMe";
+
 function App() {
   return (
     <>
