@@ -12,7 +12,7 @@ export default function Navbar() {
     { Home: "/" },
     { About: "about" },
     { Skills: "skills" },
-    { Contact: "contact" },
+    { Projects: "project" },
   ];
 
   function handleClick() {
