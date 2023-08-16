@@ -7,6 +7,7 @@ import CtaSection from "./components/CtaSection";
 import Footer from "./components/Footer";
 import Aboutme from "./components/Aboutme";
 import ContactMe from "./components/ContactMe";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<Aboutme />} />
         <Route path="/skills" element={<SkillSection />} />
         <Route path="/contact" element={<ContactMe />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
 
       <CtaSection />
