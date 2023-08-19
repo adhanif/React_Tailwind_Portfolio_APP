@@ -15,7 +15,7 @@ export default function SkillSection() {
       <h1 className="mt-40 font-bold text-6xl mb-2 text-center underline underline-offset-8 decoration-red-900 ">
         Skills
       </h1>
-      <div className="container grid grid-cols-6 gap-10    items-center px-8 mx-auto mt-20 mb-20 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
+      <div className="container grid grid-cols-6 gap-10    items-center md:px-8 mx-auto mt-20 mb-20 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 ">
         {/* 1st card  */}
         <SkillsCard logo={html5} heading={"HTML 5"} />
 

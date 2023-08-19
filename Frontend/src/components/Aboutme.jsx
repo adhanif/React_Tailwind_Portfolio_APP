@@ -1,8 +1,6 @@
 import React from "react";
 import portrait from "../img/portrait.jpg";
 import JobCard from "./JobCard";
-import portfolioImage from "../img/portfolio.jpeg";
-import Typewriter from "typewriter-effect";
 
 export default function Aboutme() {
   return (
