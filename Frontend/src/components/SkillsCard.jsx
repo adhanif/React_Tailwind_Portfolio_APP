@@ -4,7 +4,7 @@ export default function SkillsCard({ logo, heading }) {
   return (
     <>
       <div
-        className="max-w-sm   rounded overflow-hidden shadow-lg bg-slate-100 bg-opacity-75  p-5  duration-300 ease-in-out hover:scale-110 md:w-100 "
+        className="max-w-sm   rounded-lg overflow-hidden shadow-lg bg-white bg-opacity-75  p-5  duration-300 ease-in-out hover:scale-110 md:w-100 "
         style={{ height: "100%" }}
       >
         <img

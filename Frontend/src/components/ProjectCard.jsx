@@ -3,7 +3,7 @@ import React from "react";
 export default function ProjectCard({ heading, img }) {
   return (
     <div
-      className="max-w-sm   rounded overflow-hidden shadow-lg bg-slate-100 bg-opacity-75  duration-300 ease-in-out  md:w-100 cursor-pointer "
+      className="max-w-sm   rounded overflow-hidden shadow-lg bg-white bg-opacity-75  duration-300 ease-in-out  md:w-100 cursor-pointer "
       style={{ height: "100%" }}
     >
       <div className="w-full  overflow-hidden">

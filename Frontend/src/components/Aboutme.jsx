@@ -1,15 +1,30 @@
 import React from "react";
 import portrait from "../img/portrait.jpg";
 import JobCard from "./JobCard";
+import portfolioImage from "../img/portfolio.jpeg";
+
 export default function Aboutme() {
   return (
     <>
+      <div
+        className=" relative overflow-hidden bg-fixed bg-no-repeat bg-center"
+        style={{
+          backgroundImage: `url(${portfolioImage})`,
+          height: "800px",
+        }}
+      >
+        <div
+          className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-gradient-to-r from-black  "
+          // style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+        ></div>
+      </div>
+
       <div className="container flex flex-col  justify-between px-8   mx-auto mt-4  space-y-12 md:py-10  md:space-y-0">
         <div className="mb-12">
           <h1 className="text-center lg:text-left text-4xl md:text-6xl font-semibold mb-7 mt-5">
             About <span className="text-orange-500">me</span>
           </h1>
-          <p className="p-4 bg-slate-200 bg-opacity-50 text-base mx-auto lg:mx-0 w-full text-center md:text-2xl lg:text-left md:max-w-xl ">
+          <p className="p-4 bg-slate-300 rounded bg-opacity-50 text-base mx-auto lg:mx-0 w-full text-center md:text-2xl lg:text-left md:max-w-xl ">
             Let me tell you few things...
           </p>
         </div>

@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 
-body{
+/* body{
     background:url("./img/bg-tablet-pattern.svg");
-    /* background-repeat: no-repeat; */
     background-size: 1000px;
     background-position: 90% -25%;
-}
+} */
