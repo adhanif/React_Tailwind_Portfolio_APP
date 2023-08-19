@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
           </div>
           {/* searchbar+copyright container */}
-          <div className="flex flex-col space-y-12 ">
+          <div className="flex flex-col items-center space-y-12 ">
             <div className="flex space-x-3 ">
               <input
                 type="text"
