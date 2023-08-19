@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-veryDarkBlue">
-        <div className="container flex flex-col justify-between mx-auto px-8 space-y-8 py-10  lg:flex-row  md:space-y-0  ">
+        <div className="container flex flex-col justify-between mx-auto md:px-8 space-y-8 py-10  lg:flex-row  md:space-y-0  ">
           {/* logo container  */}
           <div className="flex flex-col space-y-12 md:mb-8">
             <img src={logowhite} alt="" className="lg:h-8 " />
