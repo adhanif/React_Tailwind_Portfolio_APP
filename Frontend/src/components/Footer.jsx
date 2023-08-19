@@ -76,12 +76,13 @@ export default function Footer() {
             </div>
             {/*  */}
             <div className="flex flex-col space-y-3 text-white  md:mb-20">
-              <a href="" className="hover:text-brightRed hover:scale-110">
-                Careers
-              </a>
-              <a href="" className="hover:text-brightRed hover:scale-110">
+              <NavLink
+                to="/Portfolio"
+                className="hover:text-brightRed hover:scale-110"
+              >
                 Projects
-              </a>
+              </NavLink>
+
               <a href="" className="hover:text-brightRed hover:scale-110">
                 Privacy Policy
               </a>
