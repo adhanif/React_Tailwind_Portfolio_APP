@@ -40,7 +40,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="container flex flex-col-reverse items-center  text-center px-8 mx-auto mt-40 space-y-8  lg:flex-row md:space-y-0 ">
+      <div className="container flex flex-col-reverse items-center  text-center md:px-8 mx-auto mt-10 md:mt-40 space-y-8  lg:flex-row md:space-y-0 ">
         <div className="flex flex-col  text-center  space-y-12 pr-0 md:pr-5 lg:w-1/2  md:mt-10">
           <h1 className=" text-3xl font-bold text-center  md:text-5xl  md:text-left  sm:text-4xl ">
             Render ideas to perfection and make visible what yet to come
@@ -71,7 +71,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <h1 className="mt-40 font-bold text-6xl mb-2 text-center underline underline-offset-8 decoration-red-900 ">
+      <h1 className=" mt-10 md:mt-40 font-bold text-6xl mb-2 text-center underline underline-offset-8 decoration-red-900 ">
         Services
       </h1>
       <div className="container grid grid-cols-6 gap-10    items-center md:px-8 mx-auto mt-20 mb-20 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 ">
