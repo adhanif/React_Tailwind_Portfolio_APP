@@ -9,7 +9,7 @@ export default function Portfolio() {
       <h1 className=" mt-10 md:mt-20 font-bold text-4xl md:text-6xl text-center underline underline-offset-8 decoration-red-900 ">
         Projects
       </h1>
-      <div className="container mx-auto flex flex-col  items-center mt-20">
+      <div className="container mx-auto flex flex-col justify-items-center items-center mt-20">
         <NavLink to="/finalProject">
           <ProjectCard heading={"TypeOne Diabetes App"} img={image} />
         </NavLink>

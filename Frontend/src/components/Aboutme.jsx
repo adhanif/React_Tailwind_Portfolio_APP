@@ -5,7 +5,7 @@ import JobCard from "./JobCard";
 export default function Aboutme() {
   return (
     <>
-      <div className="container flex flex-col  justify-between px-8   mx-auto mt-4  space-y-12 md:py-10  md:space-y-0">
+      <div className="container flex flex-col  justify-between md:px-8   mx-auto mt-4  space-y-12 md:py-10  md:space-y-0">
         <div className="mb-12">
           <h1 className="text-center lg:text-left text-4xl md:text-6xl font-semibold mb-7 mt-5">
             About <span className="text-orange-500">me</span>
@@ -24,7 +24,7 @@ export default function Aboutme() {
             />
           </div>
           <div className=" md:w-full ">
-            <p className="text-base md:text-2xl  text-center md:text-left">
+            <p className="text-base md:text-2xl  text-justify px-0 md:px-8 lg:px-0">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
               quaerat, cum quibusdam tenetur quasi explicabo dolor, illo, natus
               a deleniti enim optio assumenda fugiat dicta totam ad expedita
@@ -39,7 +39,7 @@ export default function Aboutme() {
           </div>
         </div>
       </div>
-      <div className="container grid grid-cols-6 gap-10  items-center px-8 mx-auto mt-20 mb-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
+      <div className="container grid grid-cols-6 gap-10  items-center justify-items-center md:px-8 mx-auto mt-20 mb-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
         {/* 1st card  */}
         <JobCard
           job={"Freelancer"}

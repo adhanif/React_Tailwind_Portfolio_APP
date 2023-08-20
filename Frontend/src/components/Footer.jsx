@@ -96,7 +96,7 @@ export default function Footer() {
                 className="flex-1 px-4 rounded-full focus:outline-none"
                 placeholder="Subscribe "
               />
-              <button className="px-6 py-2 text-white rounded-full bg-red-900 hover:bg-brightRedLight focus:outline-none hover:scale-110">
+              <button className="px-6 py-2 text-white rounded-full bg-red-900 hover:bg-orange-500 focus:outline-none hover:scale-110">
                 Go
               </button>
             </div>

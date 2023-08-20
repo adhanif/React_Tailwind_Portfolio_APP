@@ -15,7 +15,7 @@ export default function FinalProject() {
         <div className="w-[30%]">
           <div>
             <h1 className="text-2xl font-bold mb-5 ">TypeOne Diabetes App</h1>
-            <p className="break-all">
+            <p className="text-justify">
               TypeOne is a web application designed to empower individuals with
               diabetes by providing valuable educational resources and fostering
               connections within the diabetes community. TypeOne allows

@@ -62,7 +62,7 @@ export default function Navbar() {
             })}
           </div>
           <button
-            className="hidden   md:block p-2  text-white bg-red-900 rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110"
+            className="hidden   md:block p-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110"
             onClick={() => {
               navigate("/contact");
             }}
