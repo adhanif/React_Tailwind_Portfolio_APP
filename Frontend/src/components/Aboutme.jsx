@@ -26,11 +26,11 @@ export default function Aboutme() {
 
         <div className="flex flex-col  lg:flex-row md:space-x-12 xs:space-y-10 lg:space-y-0 items-center lg:items-start ">
           <div className=" md:w-1/3">
-            <img
+            {/* <img
               src={portrait}
               alt=""
               className=" object-contain rounded-full border-4 border-orange-500 "
-            />
+            /> */}
           </div>
           <div className=" md:w-full ">
             <p className="text-base md:text-2xl  text-justify px-0 md:px-8 lg:px-0">
