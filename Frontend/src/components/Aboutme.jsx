@@ -25,16 +25,31 @@ export default function Aboutme() {
           </div>
           <div className=" md:w-full ">
             <p className="text-base md:text-2xl  text-justify px-0 md:px-8 lg:px-0">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-              quaerat, cum quibusdam tenetur quasi explicabo dolor, illo, natus
-              a deleniti enim optio assumenda fugiat dicta totam ad expedita
-              alias. Quasi. Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Iste, maxime. Asperiores adipisci quas dignissimos. Non nisi
-              aliquam ducimus corporis deleniti voluptatibus pariatur quas unde
-              animi itaque quod, a totam quibusdam.Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Iste, maxime. Asperiores adipisci
-              quas dignissimos. Non nisi aliquam ducimus corporis deleniti
-              voluptatibus pariatur quas.
+              Hi, I am Adnan. I am a highly motivated and enthusiastic Junior
+              Web Developer with a background in engineering, bringing a unique
+              perspective to the world of web development. My whole life, I've
+              been somehow connected with technology, and always been passionate
+              about building things.
+              <br />
+              <br />
+              In my previous professional role, while working on a task, I
+              discovered my true passion and decided to change my career to a
+              new path. Since I believe you should never stop learning, So
+              recently I completed my 15 weeks Full-Stack Web Development
+              Bootcamp at the esteemed WBS Coding School Berlin.
+              <br />
+              <br />
+              This intensive boot-camp has provided me with a solid foundation
+              in the building blocks of modern web applications. Now, coding is
+              my playground, and I'm excited to keep learning. I'm not just
+              learning to code, I'm passionate about it, and I'm here to shape
+              the digital world in my unique way.
+              <br />
+              <br />
+              With my strong analytical abilities, attention to detail, and a
+              natural thirst for continuous learning, I am ready to contribute
+              to your team's success. I am constantly looking for new
+              opportunities in the field of web development.
             </p>
           </div>
         </div>
