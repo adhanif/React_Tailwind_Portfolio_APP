@@ -49,10 +49,10 @@ export default function Navbar() {
             {menuItems.map((item) => {
               const key = Object.keys(item)[0];
               return (
-                <div className="my-5 lg:my-0 md:pl-0" key={key}>
+                <div className="my-5 lg:my-0 md:pl-0 hover:scale-110" key={key}>
                   <NavLink
                     to={Object.values(item)[0]}
-                    className="hover:text-red-900 hover:scale-110 font-bold text-xl  "
+                    className="hover:text-orange-500 hover:scale-110 font-bold text-xl  "
                   >
                     {Object.keys(item)[0]}
                     {/* {item} */}

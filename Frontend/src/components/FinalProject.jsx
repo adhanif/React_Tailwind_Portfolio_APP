@@ -14,7 +14,7 @@ export default function FinalProject() {
           <img
             src={image}
             alt=""
-            className="w-full h-[230px] md:h-[500px] object-cover rounded-lg shadow-lg"
+            className="w-full h-[230px] md:h-[500px] object-cover rounded-lg shadow-lg hover:scale-95"
           />
           <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-10 ">
             <a
@@ -46,7 +46,7 @@ export default function FinalProject() {
           </div>
         </div>
         <div className="w-full  lg:w-[40%]">
-          <div className="bg-white shadow-lg p-8 md:p-10 rounded-lg">
+          <div className="bg-white shadow-lg p-8 md:p-10 rounded-lg hover:scale-95">
             <h1 className="text-2xl font-bold mb-5 text-center ">
               TypeOne Diabetes App
             </h1>
@@ -63,7 +63,7 @@ export default function FinalProject() {
               for the backend and frontend development.
             </p>
           </div>
-          <div className="bg-white shadow-lg  mt-5 p-8 md:p-10 rounded-lg">
+          <div className="bg-white shadow-lg  mt-5 p-8 md:p-10 rounded-lg hover:scale-95">
             <h1 className="font-bold text-2xl mb-5 text-center">
               Project information
             </h1>

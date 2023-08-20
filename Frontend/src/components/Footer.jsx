@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-row justify-around space-x-40 ">
             <div className="flex flex-col space-y-3 text-white ">
-              <NavLink to="/" className="hover:text-brightRed hover:scale-">
+              <NavLink to="/" className="hover:text-brightRed hover:scale-110">
                 {" "}
                 Home
               </NavLink>
@@ -53,21 +53,21 @@ export default function Footer() {
               <div className="flex flex-col space-y-3 text-white ">
                 <NavLink
                   to="/about"
-                  className="hover:text-brightRed hover:scale-"
+                  className="hover:text-brightRed hover:scale-110"
                 >
                   {" "}
                   About me
                 </NavLink>
                 <NavLink
                   to="/skills"
-                  className="hover:text-brightRed hover:scale-"
+                  className="hover:text-brightRed hover:scale-110"
                 >
                   {" "}
                   Skills
                 </NavLink>
                 <NavLink
                   to="/contact"
-                  className="hover:text-brightRed hover:scale-"
+                  className="hover:text-brightRed hover:scale-110"
                 >
                   {" "}
                   Contact
