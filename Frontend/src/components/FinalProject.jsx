@@ -10,19 +10,19 @@ export default function FinalProject() {
         Project Details
       </h1>
       <div className="sm:container px-5 md:px-0 mx-auto flex flex-col-reverse lg:flex-row lg:space-x-5 ">
-        <div className="w-full  lg:w-[60%]  mt-5 lg:mt-0 flex flex-col justify-start space-y-40 ">
+        <div className="w-full  lg:w-[60%]  mt-5 lg:mt-0 flex flex-col justify-start space-y-20 md:space-y-40 ">
           <img
             src={image}
             alt=""
             className="w-full h-[230px] md:h-[500px] object-cover rounded-lg shadow-lg"
           />
-          <div className="flex justify-center space-x-10">
+          <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-10 ">
             <a
               href="https://github.com/adhanif/MERN_Stack_Diabetes_APP"
               target="_blank"
             >
               <button
-                className="flex items-center space-x-3 p-2 px-4  text-white bg-green-900 hover:bg-green-300  rounded-full text-center  hover:text-black focus:outline-none hover:scale-110"
+                className="w-full md:w-auto flex items-center  justify-center space-x-3 p-2 px-4  text-white bg-green-900 hover:bg-green-300  rounded-full text-center  hover:text-black focus:outline-none hover:scale-110"
                 href="www.google.com"
               >
                 {" "}
@@ -35,7 +35,7 @@ export default function FinalProject() {
               target="_blank"
             >
               <button
-                className="flex items-center space-x-3 p-2 px-4  text-white bg-green-900 hover:bg-green-300  rounded-full text-center  hover:text-black focus:outline-none hover:scale-110"
+                className="w-full md:w-auto flex items-center justify-center space-x-3 p-2 px-4  text-white bg-green-900 hover:bg-green-300  rounded-full text-center  hover:text-black focus:outline-none hover:scale-110"
                 href="www.google.com"
               >
                 {" "}
