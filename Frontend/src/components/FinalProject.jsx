@@ -1,20 +1,49 @@
 import React from "react";
-// import image from "../img/diabetes.avif";
 import image from "../img/gif.gif";
+import github from "../img/github.png";
+import projectLink from "../img/external-link.svg";
 
 export default function FinalProject() {
   return (
     <>
-      <h1 className="text-4xl font-bold text-center mt-10 mb-20">
-        PROJECT DETAILS
+      <h1 className="mt-20 text-3xl md:text-5xl font-bold text-center mb-20  md:mb-40 underline underline-offset-8 decoration-red-900">
+        Project Details
       </h1>
       <div className="sm:container px-5 md:px-0 mx-auto flex flex-col-reverse lg:flex-row lg:space-x-5 ">
-        <div className="w-full  lg:w-[60%]  mt-5 lg:mt-0">
+        <div className="w-full  lg:w-[60%]  mt-5 lg:mt-0 flex flex-col justify-start space-y-40 ">
           <img
             src={image}
             alt=""
             className="w-full h-[230px] md:h-[500px] object-cover rounded-lg shadow-lg"
           />
+          <div className="flex justify-center space-x-10">
+            <a
+              href="https://github.com/adhanif/MERN_Stack_Diabetes_APP"
+              target="_blank"
+            >
+              <button
+                className="flex items-center space-x-3 p-2 px-4  text-white bg-green-900 hover:bg-green-300  rounded-full text-center  hover:text-black focus:outline-none hover:scale-110"
+                href="www.google.com"
+              >
+                {" "}
+                <img src={github} alt="" className="h-8 " />
+                <p className="font-semibold">Github Link</p>
+              </button>
+            </a>
+            <a
+              href="https://mern-stack-diabetes-app.onrender.com/"
+              target="_blank"
+            >
+              <button
+                className="flex items-center space-x-3 p-2 px-4  text-white bg-green-900 hover:bg-green-300  rounded-full text-center  hover:text-black focus:outline-none hover:scale-110"
+                href="www.google.com"
+              >
+                {" "}
+                <img src={projectLink} alt="" className="h-8 " />
+                <p className="font-semibold">Show Demo</p>
+              </button>
+            </a>
+          </div>
         </div>
         <div className="w-full  lg:w-[40%]">
           <div className="bg-white shadow-lg p-8 md:p-10 rounded-lg">

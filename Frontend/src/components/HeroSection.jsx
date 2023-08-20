@@ -71,10 +71,10 @@ export default function HeroSection() {
         </div>
       </div> */}
 
-      <h1 className=" mt-20 md:mt-40 font-bold text-4xl md:text-6xl mb-2 text-center underline underline-offset-8 decoration-red-900 ">
+      <h1 className="mt-20 font-bold text-3xl md:text-6xl  text-center underline underline-offset-8 decoration-red-900 ">
         Services
       </h1>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10    items-center md:px-8 mx-auto mt-20 mb-20 justify-items-center  ">
+      <div className="md:container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10    items-center md:px-8 mx-auto mt-20 mb-20 justify-items-center  ">
         <SkillsCard logo={webdevelopment} heading={"WEB DEVELOPMENT"} />
         <SkillsCard logo={webdesign} heading={"WEB DESIGN"} />
         <SkillsCard logo={responsivedesign} heading={"RESPONSIVE DESIGN"} />
