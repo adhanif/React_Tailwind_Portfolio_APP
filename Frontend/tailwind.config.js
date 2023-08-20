@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  // content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: {
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ""),
+    files: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  },
   theme: {
     screens: {
       xs: "320px",
@@ -9,7 +14,7 @@ export default {
 
       md: "768px",
       // => @media (min-width: 768px) { ... }
-      
+
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
@@ -32,5 +37,10 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("taos/plugin")],
+  safelist: [
+    "!duration-[0ms]",
+    "!delay-[0ms]",
+    'html.js :where([class*="taos:"]:not(.taos-init))',
+  ],
 };
