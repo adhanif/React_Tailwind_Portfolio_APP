@@ -1,6 +1,7 @@
 import React from "react";
 import portrait from "../img/portrait.jpg";
 import JobCard from "./JobCard";
+import Typewriter from "typewriter-effect";
 
 export default function Aboutme() {
   return (
@@ -11,7 +12,15 @@ export default function Aboutme() {
             About <span className="text-orange-500">me</span>
           </h1>
           <p className="p-4 bg-slate-300 rounded bg-opacity-50 text-base mx-auto lg:mx-0 w-full text-center md:text-2xl lg:text-left md:max-w-xl ">
-            Let me tell you few things...
+            <span>
+              <Typewriter
+                options={{
+                  strings: ["Let me tell you few things about me..."],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
           </p>
         </div>
 
@@ -27,9 +36,9 @@ export default function Aboutme() {
             <p className="text-base md:text-2xl  text-justify px-0 md:px-8 lg:px-0">
               Hi, I am Adnan. I am a highly motivated and enthusiastic Junior
               Web Developer with a background in engineering, bringing a unique
-              perspective to the world of web development. My whole life, I've
-              been somehow connected with technology, and always been passionate
-              about building things.
+              perspective to the world of web development. Throughout my
+              education and working experience, I've been somehow connected with
+              technology, and always been passionate about building things.
               <br />
               <br />
               In my previous professional role, while working on a task, I

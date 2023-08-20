@@ -23,7 +23,7 @@ export default function HeroSection() {
           <h1 className="text-white font-medium text-4xl md:text-6xl lg:text-8xl text-center">
             I am Adnan Hanif
           </h1>
-          <span className="text-white mt-10 font-medium text-2xl md:text-xl lg:text-5xl">
+          <span className="text-white mt-5 md:mt-10 font text-xl md:text-2xl lg:text-5xl">
             {" "}
             <Typewriter
               options={{

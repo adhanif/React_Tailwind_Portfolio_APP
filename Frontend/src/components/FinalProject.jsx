@@ -8,13 +8,19 @@ export default function FinalProject() {
       <h1 className="text-4xl font-bold text-center mt-10 mb-20">
         PROJECT DETAILS
       </h1>
-      <div className="container mx-auto flex flex-col lg:flex-row space-x-5">
-        <div className="w-[70%] ">
-          <img src={image} alt="" className="w-full h-[500px] object-cover" />
+      <div className="sm:container px-5 md:px-0 mx-auto flex flex-col-reverse lg:flex-row lg:space-x-5 ">
+        <div className="w-full  lg:w-[60%]  mt-5 lg:mt-0">
+          <img
+            src={image}
+            alt=""
+            className="w-full h-[230px] md:h-[500px] object-cover rounded-lg shadow-lg"
+          />
         </div>
-        <div className="w-[30%]">
-          <div>
-            <h1 className="text-2xl font-bold mb-5 ">TypeOne Diabetes App</h1>
+        <div className="w-full  lg:w-[40%]">
+          <div className="bg-white shadow-lg p-8 md:p-10 rounded-lg">
+            <h1 className="text-2xl font-bold mb-5 text-center ">
+              TypeOne Diabetes App
+            </h1>
             <p className="text-justify">
               TypeOne is a web application designed to empower individuals with
               diabetes by providing valuable educational resources and fostering
@@ -28,8 +34,10 @@ export default function FinalProject() {
               for the backend and frontend development.
             </p>
           </div>
-          <div className="bg-white shadow-lg rounded mt-5 p-5">
-            <h1 className="font-bold text-2xl mb-5">Project information</h1>
+          <div className="bg-white shadow-lg  mt-5 p-8 md:p-10 rounded-lg">
+            <h1 className="font-bold text-2xl mb-5 text-center">
+              Project information
+            </h1>
             <p className="font-semibold text-lg mb-2">Technologies</p>
             <div className="pl-6 mb-2">
               {" "}
