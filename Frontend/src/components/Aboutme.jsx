@@ -1,5 +1,5 @@
 import React from "react";
-import portrait from "../img/portrait.jpg";
+import portrait from "../img/portrait4.jpg";
 import JobCard from "./JobCard";
 import Typewriter from "typewriter-effect";
 
@@ -23,15 +23,23 @@ export default function Aboutme() {
             </span>
           </p>
         </div>
-
+        <div className=" translate-x-6">
+          <img
+            src={portrait}
+            alt=""
+            className=" w-[350px] h-[300px]    "
+            style={{ borderRadius: "50%" }}
+          />
+        </div>
         <div className="flex flex-col  lg:flex-row md:space-x-12 xs:space-y-10 lg:space-y-0 items-center lg:items-start ">
-          <div className=" md:w-1/3">
-            {/* <img
+          {/* <div className=" md:w-1/3">
+            <img
               src={portrait}
               alt=""
-              className=" object-contain rounded-full border-4 border-orange-500 "
-            /> */}
-          </div>
+              className="   "
+              style={{ borderRadius: "50%" }}
+            />
+          </div> */}
           <div className=" md:w-full ">
             <p className="text-base md:text-2xl  text-justify px-0 md:px-8 lg:px-0">
               Hi, I am Adnan. I am a highly motivated and enthusiastic Junior

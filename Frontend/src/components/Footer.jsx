@@ -2,9 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logowhite from "../img/logowhite.svg";
 import facebook from "../img/icon-facebook.svg";
-import youtube from "../img/icon-youtube.svg";
+import xing from "../img/logo-xing.svg";
 import linkedin from "../img/linkedin.svg";
-import pinterest from "../img/icon-pinterest.svg";
 import instagram from "../img/icon-instagram.svg";
 import github from "../img/github.png";
 
@@ -17,27 +16,38 @@ export default function Footer() {
           <div className="flex flex-col space-y-12 md:mb-8">
             <img src={logowhite} alt="" className="lg:h-8 " />
             <div className="flex justify-center space-x-4 ">
-              <a href="" className="hover:scale-125 ">
-                <img src={facebook} alt="" className="h-8  " />
+              <a href="" className="hover:scale-125 " target="_blank">
+                <img
+                  src={facebook}
+                  alt="facebook"
+                  className="h-8  rounded-md hover:bg-black"
+                />
               </a>
-              <a href="" className="hover:scale-125">
-                <img src={youtube} alt="" className="h-8" />
+              <a
+                href="https://www.xing.com/profile/Adnan_hanif5/cv"
+                className="hover:scale-125 bg-white rounded-md"
+                target="_blank"
+              >
+                <img src={xing} alt="" className="h-8 " />
               </a>
               <a
                 href="https://github.com/adhanif"
-                className="hover:scale-125 bg-white rounded full"
+                className="hover:scale-125 bg-white rounded"
+                target="_blank"
               >
-                <img src={github} alt="" className="h-8 " />
+                <img src={github} alt="" className="h-8 rounded-md" />
               </a>
               <a
                 href="https://www.linkedin.com/in/adnan-hanif/"
                 className="hover:scale-125 bg-white rounded-md"
+                target="_blank"
               >
                 <img src={linkedin} alt="" className="h-8 " />
               </a>
               <a
                 href="https://www.instagram.com/danilonewarrior/"
                 className="hover:scale-125"
+                target="_blank"
               >
                 <img src={instagram} alt="" className="h-8" />
               </a>
