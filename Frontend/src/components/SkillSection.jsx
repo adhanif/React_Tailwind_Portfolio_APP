@@ -9,6 +9,11 @@ import bootstrap from "../img/bootstrap.svg";
 import materialUI from "../img/material-ui.svg";
 import mongodb from "../img/mongodb.svg";
 import SkillsCard from "./SkillsCard";
+import nodeJs from "../img/nodejs.svg";
+import sql from "../img/sql.svg";
+import python from "../img/python.svg";
+import git from "../img/git.svg";
+import figma from "../img/figma.svg";
 
 export default function SkillSection() {
   return (
@@ -17,32 +22,30 @@ export default function SkillSection() {
         Skills
       </h1>
       <div className="container grid grid-cols-6 gap-10   justify-items-center md:px-8 mx-auto mt-20 mb-20 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 ">
-        {/* 1st card  */}
-        <SkillsCard logo={html5} heading={"HTML 5"} />
+        <SkillsCard logo={html5} heading={"HTML5"} />
 
-        {/* 2nd card  */}
-        <SkillsCard logo={css3} heading={"CSS3 Styling"} />
+        <SkillsCard logo={css3} heading={"CSS3"} />
 
-        {/* 3rd card  */}
-        <SkillsCard logo={javascript} heading={"Javascript"} />
+        <SkillsCard logo={javascript} heading={"JAVASCRIPT"} />
+        <SkillsCard logo={python} heading={"PYTHON"} />
 
-        {/* 4th card  */}
-        <SkillsCard logo={react} heading={"React"} />
+        <SkillsCard logo={react} heading={"REACT"} />
 
-        {/* 5th card  */}
-        <SkillsCard logo={expressJS} heading={"ExpressJs"} />
+        <SkillsCard logo={expressJS} heading={"EXPRESS.JS"} />
 
-        {/* 6th card  */}
-        <SkillsCard logo={tailwindcss} heading={"Tailwindcss"} />
+        <SkillsCard logo={nodeJs} heading={"NODE.JS"} />
 
-        {/* 7th card  */}
-        <SkillsCard logo={bootstrap} heading={"Bootstrap"} />
+        <SkillsCard logo={tailwindcss} heading={"TAILWINDCSS"} />
 
-        {/* 8th card  */}
-        <SkillsCard logo={materialUI} heading={"Material UI"} />
+        <SkillsCard logo={bootstrap} heading={"BOOTSTRAP"} />
 
-        {/* 9th card  */}
-        <SkillsCard logo={mongodb} heading={"Mongodb"} />
+        <SkillsCard logo={materialUI} heading={"MATERIAL UI"} />
+
+        <SkillsCard logo={mongodb} heading={"MONGODB"} />
+
+        {/* 11th card  */}
+        <SkillsCard logo={sql} heading={"SQL"} />
+        <SkillsCard logo={figma} heading={"FIGMA"} />
       </div>
     </>
   );
