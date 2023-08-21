@@ -11,28 +11,28 @@ export default function Aboutme() {
           <h1 className="text-center lg:text-left text-3xl md:text-6xl font-semibold mb-7 mt-5">
             About <span className="text-orange-500">me</span>
           </h1>
-          <p className="p-4 bg-slate-300 rounded bg-opacity-50 text-base mx-auto lg:mx-0 w-full text-center md:text-2xl lg:text-left md:max-w-xl md:mb-10">
-            <span>
-              <Typewriter
-                options={{
-                  strings: ["Let me tell you few things about me..."],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </span>
-          </p>
+          <div className="p-4 bg-slate-300 rounded bg-opacity-50 text-base mx-auto lg:mx-0 w-full text-center md:text-2xl lg:text-left md:max-w-xl md:mb-10">
+            <Typewriter
+              options={{
+                strings: ["Let me tell you few things about me..."],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
         </div>
         <div className="grid place-items-center ">
           <img
             src={portrait}
             alt=""
-            className=" w-[350px] h-[300px]   delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0 md:mb-20"
+            className=" w-[350px] h-[300px] md:mb-20
+            delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible "
+            data-taos-offset="400"
             style={{ borderRadius: "50%" }}
           />
         </div>
         <div className="flex flex-col  lg:flex-row md:space-x-12 xs:space-y-10 lg:space-y-0 items-center lg:items-start ">
-          <div className=" md:w-full " data-taos-offset="400">
+          <div className=" md:w-full ">
             <p className="text-base md:text-xl  text-justify px-0 md:px-8 lg:px-0   ">
               Hi, I am Adnan. I am a highly motivated and enthusiastic Junior
               Web Developer with a background in engineering, bringing a unique
@@ -59,7 +59,11 @@ export default function Aboutme() {
           </div>
         </div>
       </div>
-      <div className="container grid grid-cols-6 gap-10  items-center justify-items-center md:px-8 mx-auto mt-20 mb-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
+      <div
+        className="container grid grid-cols-6 gap-10  items-center justify-items-center md:px-8 mx-auto mt-20 mb-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 
+      
+      "
+      >
         {/* 1st card  */}
         <JobCard
           job={"Freelancer"}
