@@ -9,6 +9,7 @@ import Aboutme from "./components/Aboutme";
 import ContactMe from "./components/ContactMe";
 import Portfolio from "./components/Portfolio";
 import FinalProject from "./components/FinalProject";
+import Project2 from "./components/Project2";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<ContactMe />} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/finalProject" element={<FinalProject />} />
+        <Route path="/Project2" element={<Project2 />} />
       </Routes>
 
       <CtaSection />
