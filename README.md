@@ -1,15 +1,36 @@
-# React_Tailwind_Portfolio_APP
+# My Portfolio Website
+Welcome to my portfolio website! This project showcases my skills, projects, and experiences in a visually appealing and interactive manner. It's built using React and Tailwind CSS, along with other helpful libraries to enhance the user experience.
 
-(React, Tailwind)
+[![Netlify Demo](https://img.shields.io/badge/Netlify-Open%20App-blueviolet)](https://react-tailwaind-portfolio-app.netlify.app/)
 
+## Installation
 
-https://react-tailwaind-portfolio-app.netlify.app/
+1. Clone the repository:
+   
+   ```bash
+   git clone https://github.com/adhanif/React_Tailwind_Portfolio_APP.git
+   ```
+2. Navigate to the project directory:
+   
+   ```bash
+   cd React_Tailwind_Portfolio_APP
+   ```
+3. Install  dependencies:
 
-## Getting Started
+   ```bash
+   npm install
+   ```
+4. Run the application
 
-To get the project up and running on your local machine, follow these steps:
-
-1. Clone the repository: `git clone [vite-project]`
-2. Navigate to the project directory: `cd [vite-project]`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm run dev`
+   ```bash
+   npm run dev
+   ```
+## Dependencies
+- @heroicons/react: A set of free-to-use high-quality SVG icons.
+- react: JavaScript library for building user interfaces.
+- react-animation-on-scroll: Library for animating elements on scroll.
+- react-dom: React package for DOM rendering.
+- react-router-dom: Library for routing in React applications.
+- taos: A dependency, please provide a brief description.
+- typewriter-effect: Creates a typewriter effect for text elements.
+- tailwindcss: Utility-first CSS framework.
