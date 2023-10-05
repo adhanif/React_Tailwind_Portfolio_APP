@@ -34,15 +34,12 @@ export default function Aboutme() {
 
         <div className="flex flex-col  lg:flex-row md:space-x-12 xs:space-y-10 lg:space-y-0 items-center lg:items-start ">
           <div className=" md:w-full ">
-            <AnimationOnScroll
-              animateIn="animate__fadeInLeft"
-              animateOut="animate__fadeOutLeft"
-            >
+            <AnimationOnScroll animateIn="animate__fadeInLeft" delay={200}>
               <p className="text-base md:text-xl  text-justify px-0 md:px-8 lg:px-0">
-                Hi, I am Adnan. I am a highly motivated and enthusiastic Junior
-                Web Developer with a background in engineering, bringing a
-                unique perspective to the world of web development. Throughout
-                my education and working experience, I've been somehow connected
+                Hi, I am Adnan. I am a highly motivated and enthusiastic Full-Stack Web
+                Developer with a background in engineering, bringing a unique
+                perspective to the world of web development. Throughout my
+                education and working experience, I've been somehow connected
                 with technology, and always been passionate about building
                 things. In my previous professional role, while working on a
                 task, I discovered my true passion and decided to change my
@@ -54,10 +51,7 @@ export default function Aboutme() {
 
             <br />
             <br />
-            <AnimationOnScroll
-              animateIn="animate__fadeInRight"
-              animateOut="animate__fadeOutRight"
-            >
+            <AnimationOnScroll animateIn="animate__fadeInRight" delay={300}>
               <p className="text-base md:text-xl  text-justify px-0 md:px-8 lg:px-0">
                 This intensive boot-camp has provided me with a solid foundation
                 in the building blocks of modern web applications. Now, coding
@@ -79,32 +73,38 @@ export default function Aboutme() {
       "
       >
         {/* 1st card  */}
-
-        <JobCard
-          job={"Freelancer"}
-          position={"Full Stack Developer"}
-          detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
+          {" "}
+          <JobCard
+            job={"Freelancer"}
+            position={"Full Stack Developer"}
+            detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Voluptatibus quia, nulla! Maiores et perferendis eaque,
           exercitationem praesentium nihil.`}
-        />
-
+          />
+        </AnimationOnScroll>
         {/* 2nd card  */}
-        <JobCard
-          job={"Designer ABC"}
-          position={"Front End Developer"}
-          detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
+          <JobCard
+            job={"Designer ABC"}
+            position={"Front End Developer"}
+            detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Voluptatibus quia, nulla! Maiores et perferendis eaque,
           exercitationem praesentium nihil.`}
-        />
+          />
+        </AnimationOnScroll>
 
         {/* 3rd card  */}
-        <JobCard
-          job={"Webworks"}
-          position={"Back End Developer"}
-          detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
+          <JobCard
+            job={"Webworks"}
+            position={"Back End Developer"}
+            detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Voluptatibus quia, nulla! Maiores et perferendis eaque,
           exercitationem praesentium nihil.`}
-        />
+          />
+        </AnimationOnScroll>
       </div>
     </>
   );
