@@ -73,7 +73,11 @@ export default function Navbar() {
                     key={index}
                     className="my-5 lg:my-0 md:pl-0 hover:scale-110"
                   >
-                    <p className="hover:text-orange-500 hover:scale-110 font-bold text-xl cursor-pointer  ">
+                    <p
+                      className={`"hover:text-orange-500 hover:scale-110 font-bold text-xl cursor-pointer ${
+                        navbarColor ? " text-black  " : " text-white"
+                      }`}
+                    >
                       {item}
                     </p>
                   </div>
