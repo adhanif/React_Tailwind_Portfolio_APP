@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   // content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  content: {
-    relative: true,
-    transform: (content) => content.replace(/taos:/g, ""),
-    files: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  },
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       xs: "320px",
