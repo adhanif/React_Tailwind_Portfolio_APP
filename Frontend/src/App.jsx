@@ -16,7 +16,10 @@ function App() {
     <>
       {/* <Navbar /> */}
       <HeroSection />
+      <Aboutme />
       <SkillSection />
+      <Portfolio />
+      <ContactMe />
       {/* <Aboutme /> */}
       {/* <Routes>
         <Route path="/" element={<HeroSection />} />

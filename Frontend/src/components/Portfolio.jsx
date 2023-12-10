@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import image from "../img/diabetes.avif";
 import map from "../img/maps.jpg";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Portfolio() {
   return (
@@ -11,12 +12,13 @@ export default function Portfolio() {
         Projects
       </h1>
       <div className="container mx-auto flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-5 justify-center items-center mt-20">
-        <NavLink to="/finalProject">
+        <AnimationOnScroll animateIn="animate__zoomIn " duration={2}>
           <ProjectCard heading={"TypeOne Diabetes App"} img={image} />
-        </NavLink>
-        <NavLink to="/project2">
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__zoomIn " duration={2}>
           <ProjectCard heading={"IP Address Geolocation"} img={map} />
-        </NavLink>
+        </AnimationOnScroll>
       </div>
     </>
   );

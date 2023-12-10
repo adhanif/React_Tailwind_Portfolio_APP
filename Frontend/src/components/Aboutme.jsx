@@ -22,7 +22,7 @@ export default function Aboutme() {
             />
           </div>
         </div>
-        <div className="grid place-items-center ">
+        {/* <div className="grid place-items-center ">
           <img
             src={portrait}
             alt=""
@@ -30,36 +30,32 @@ export default function Aboutme() {
             data-taos-offset="400"
             style={{ borderRadius: "50%" }}
           />{" "}
-        </div>
+        </div> */}
 
         <div className="flex flex-col  lg:flex-row md:space-x-12 xs:space-y-10 lg:space-y-0 items-center lg:items-start ">
           <div className=" md:w-full ">
-            <AnimationOnScroll animateIn="animate__fadeInLeft" delay={200}>
+            <AnimationOnScroll animateIn="animate__zoomIn" delay={200}>
               <p className="text-base md:text-xl  text-justify px-0 md:px-8 lg:px-0">
-                Hi, I am Adnan. I am a highly motivated and enthusiastic Full-Stack Web
+                I am a highly motivated and enthusiastic Full-Stack Web
                 Developer with a background in engineering, bringing a unique
                 perspective to the world of web development. Throughout my
                 education and working experience, I've been somehow connected
                 with technology, and always been passionate about building
                 things. In my previous professional role, while working on a
                 task, I discovered my true passion and decided to change my
-                career to a new path. Since I believe you should never stop
-                learning, So recently I completed my 15 weeks Full-Stack Web
-                Development Bootcamp at the esteemed WBS Coding School Berlin.
+                career to a new path.
               </p>
             </AnimationOnScroll>
 
             <br />
             <br />
-            <AnimationOnScroll animateIn="animate__fadeInRight" delay={300}>
+            <AnimationOnScroll animateIn="animate__zoomIn" delay={300}>
               <p className="text-base md:text-xl  text-justify px-0 md:px-8 lg:px-0">
-                This intensive boot-camp has provided me with a solid foundation
-                in the building blocks of modern web applications. Now, coding
-                is my playground, and I'm excited to keep learning. I'm not just
-                learning to code, I'm passionate about it, and I'm here to shape
-                the digital world in my unique way. With my strong analytical
-                abilities, attention to detail, and a natural thirst for
-                continuous learning, I am ready to contribute to your team's
+                Now, coding is my playground, and I'm excited to keep learning.
+                I'm not just learning to code, I'm passionate about it, and I'm
+                here to shape the digital world in my unique way. With my strong
+                analytical abilities, attention to detail, and a natural thirst
+                for continuous learning, I am ready to contribute to your team's
                 success. I am constantly looking for new opportunities in the
                 field of web development.
               </p>
@@ -67,12 +63,11 @@ export default function Aboutme() {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className="container grid grid-cols-6 gap-10  items-center justify-items-center md:px-8 mx-auto mt-20 mb-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 
       
       "
       >
-        {/* 1st card  */}
         <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
           {" "}
           <JobCard
@@ -83,7 +78,6 @@ export default function Aboutme() {
           exercitationem praesentium nihil.`}
           />
         </AnimationOnScroll>
-        {/* 2nd card  */}
 
         <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
           <JobCard
@@ -95,7 +89,6 @@ export default function Aboutme() {
           />
         </AnimationOnScroll>
 
-        {/* 3rd card  */}
         <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
           <JobCard
             job={"Webworks"}
@@ -105,7 +98,7 @@ export default function Aboutme() {
           exercitationem praesentium nihil.`}
           />
         </AnimationOnScroll>
-      </div>
+      </div> */}
     </>
   );
 }

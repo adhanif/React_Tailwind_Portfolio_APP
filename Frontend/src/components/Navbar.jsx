@@ -33,18 +33,23 @@ export default function Navbar() {
 
   return (
     <>
-      {/* <nav className="fixed z-50  container  mx-auto p-8 text-white"> */}
       <nav
-        className={`fixed z-50    px-8 py-4  text-white w-screen ${
-          navbarColor ? "bg-veryDarkBlue " : "bg-transparent"
+        className={`fixed z-50 px-8 py-4 md:py-2 lg:py-4  text-white w-screen ${
+          navbarColor
+            ? " bg-white text-black border-b-2  shadow-lg "
+            : "bg-transparent"
         }`}
       >
         <div className="container mx-auto">
-          {/* Flex container  */}
           <div className="flex flex-col md:flex-row   justify-between md:items-center">
-            {/* Logo */}
-            <div className="pt-2">
-              <img src={logo} alt="" />
+            <div className="">
+              <h1
+                className={`font-bold text-xl lg:text-3xl ${
+                  navbarColor ? " text-black  " : " text-white"
+                }`}
+              >
+                Adnan <span className="text-orange-500">Hanif</span>
+              </h1>
             </div>
 
             {/* Menu icons  */}
@@ -83,7 +88,7 @@ export default function Navbar() {
               })}
             </div>
             <button
-              className="hidden   md:block p-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-full text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110"
+              className="hidden   md:block p-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-md text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110"
               onClick={() => {
                 navigate("/contact");
               }}
