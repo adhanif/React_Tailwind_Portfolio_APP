@@ -7,16 +7,19 @@ import webdesign from "../img/web-design.svg";
 import webdevelopment from "../img/web-development2.svg";
 import responsivedesign from "../img/responsive-design.svg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import Navbar from "./Navbar";
 
 export default function HeroSection() {
   return (
     <>
       <div
-        className="relative overflow-hidden  bg-no-repeat bg-right-bottom md:bg-center bg-cover  h-[300px] md:h-[700px]  md:bg-fixed"
+        className="flex justify-center    relative overflow-hidden  bg-no-repeat bg-right-bottom md:bg-center bg-cover  h-[300px] md:h-[810px]  md:bg-fixed"
         style={{
           backgroundImage: `url(${portfolioImage})`,
         }}
       >
+        <Navbar />
+
         <div
           className="flex flex-col justify-center items-center absolute bottom-0 left-0 right-0 top-0  overflow-hidden bg-fixed bg-opacity-50   "
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
@@ -41,7 +44,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <h1 className="mt-20 font-bold text-3xl md:text-6xl  text-center underline underline-offset-8 decoration-red-900 ">
+      {/* <h1 className="mt-20 font-bold text-3xl md:text-6xl  text-center underline underline-offset-8 decoration-red-900 ">
         Services
       </h1>
       <div className="md:container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10    items-center md:px-8 mx-auto mt-20 mb-20 justify-items-center  ">
@@ -55,7 +58,7 @@ export default function HeroSection() {
         <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
           <SkillsCard logo={responsivedesign} heading={"RESPONSIVE DESIGN"} />
         </AnimationOnScroll>
-      </div>
+      </div> */}
     </>
   );
 }

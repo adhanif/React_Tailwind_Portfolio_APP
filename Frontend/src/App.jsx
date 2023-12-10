@@ -14,9 +14,11 @@ import Project2 from "./components/Project2";
 function App() {
   return (
     <>
-      <Navbar />
-
-      <Routes>
+      {/* <Navbar /> */}
+      <HeroSection />
+      <SkillSection />
+      {/* <Aboutme /> */}
+      {/* <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/about" element={<Aboutme />} />
         <Route path="/skills" element={<SkillSection />} />
@@ -24,9 +26,9 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/finalProject" element={<FinalProject />} />
         <Route path="/Project2" element={<Project2 />} />
-      </Routes>
+      </Routes> */}
 
-      <CtaSection />
+      {/* <CtaSection /> */}
       <Footer />
     </>
   );
