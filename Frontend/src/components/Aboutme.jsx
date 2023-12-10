@@ -22,15 +22,6 @@ export default function Aboutme() {
             />
           </div>
         </div>
-        {/* <div className="grid place-items-center ">
-          <img
-            src={portrait}
-            alt=""
-            className=" w-[350px] h-[300px] md:mb-20 delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:invisible "
-            data-taos-offset="400"
-            style={{ borderRadius: "50%" }}
-          />{" "}
-        </div> */}
 
         <div className="flex flex-col  lg:flex-row md:space-x-12 xs:space-y-10 lg:space-y-0 items-center lg:items-start ">
           <div className=" md:w-full ">

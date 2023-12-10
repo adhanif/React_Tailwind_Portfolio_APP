@@ -23,34 +23,57 @@ export default function SkillSection() {
         Skills
       </h1>
       <div className="container grid grid-cols-6 gap-10   justify-items-center md:px-8 mx-auto mt-20 mb-20 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 ">
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
           <SkillsCard logo={html5} heading={"HTML5"} />
         </AnimationOnScroll>
 
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
           <SkillsCard logo={css3} heading={"CSS3"} />
         </AnimationOnScroll>
-        
-        <SkillsCard logo={javascript} heading={"JAVASCRIPT"} />
-        <SkillsCard logo={python} heading={"PYTHON"} />
 
-        <SkillsCard logo={react} heading={"REACT"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={javascript} heading={"JAVASCRIPT"} />
+        </AnimationOnScroll>
 
-        <SkillsCard logo={expressJS} heading={"EXPRESS.JS"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={python} heading={"PYTHON"} />
+        </AnimationOnScroll>
 
-        <SkillsCard logo={nodeJs} heading={"NODE.JS"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={react} heading={"REACT"} />
+        </AnimationOnScroll>
 
-        <SkillsCard logo={tailwindcss} heading={"TAILWINDCSS"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={expressJS} heading={"EXPRESS.JS"} />
+        </AnimationOnScroll>
 
-        <SkillsCard logo={bootstrap} heading={"BOOTSTRAP"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={nodeJs} heading={"NODE.JS"} />
+        </AnimationOnScroll>
 
-        <SkillsCard logo={materialUI} heading={"MATERIAL UI"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={tailwindcss} heading={"TAILWINDCSS"} />
+        </AnimationOnScroll>
 
-        <SkillsCard logo={mongodb} heading={"MONGODB"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={bootstrap} heading={"BOOTSTRAP"} />
+        </AnimationOnScroll>
 
-        {/* 11th card  */}
-        <SkillsCard logo={sql} heading={"SQL"} />
-        <SkillsCard logo={figma} heading={"FIGMA"} />
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={materialUI} heading={"MATERIAL UI"} />
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={mongodb} heading={"MONGODB"} />
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={sql} heading={"SQL"} />
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+          <SkillsCard logo={figma} heading={"FIGMA"} />
+        </AnimationOnScroll>
       </div>
     </>
   );

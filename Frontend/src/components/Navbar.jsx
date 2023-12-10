@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-
 import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
-import logo from "../img/logo.svg";
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);

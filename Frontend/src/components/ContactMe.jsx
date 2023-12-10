@@ -9,9 +9,6 @@ export default function ContactMe() {
           aria-hidden="true"
         ></div>
         <div className="mx-auto max-w-2xl text-center">
-          {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Contact me
-          </h2> */}
           <h1 className=" mt-10 md:mt-20 font-bold text-3xl md:text-6xl text-center underline underline-offset-8 decoration-red-900 ">
             Contact me
           </h1>
@@ -70,7 +67,7 @@ export default function ContactMe() {
           </div>
           <div className="mt-14 ">
             <button
-              className="block w-full rounded-md bg-red-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="block w-full rounded-md bg-red-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               type="button"
             >
               Submit
