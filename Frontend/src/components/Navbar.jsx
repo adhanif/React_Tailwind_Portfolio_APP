@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
 import { Bars3Icon, BeakerIcon, XMarkIcon } from "@heroicons/react/24/solid";
-
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
@@ -17,13 +15,7 @@ export default function Navbar() {
 
   window.addEventListener("scroll", changeNavBackground);
 
-  const navigate = useNavigate();
-  const menuItems = [
-    { Home: "/" },
-    { About: "about" },
-    { Skills: "skills" },
-    { Portfolio: "Portfolio" },
-  ];
+  const menuItems = ["Home", "About", "Skills", "Projects"];
 
   function handleClick() {
     setIsDiplayed(!isDiplayed);
@@ -56,9 +48,17 @@ export default function Navbar() {
               className="absolute right-8 cursor-pointer md:hidden "
             >
               {isDiplayed ? (
-                <XMarkIcon className="h-7 w-7 text-white" />
+                <XMarkIcon
+                  className={`h-7 w-7  ${
+                    navbarColor ? " text-black  " : " text-white"
+                  }`}
+                />
               ) : (
-                <Bars3Icon className="h-7 w-7 text-white" />
+                <Bars3Icon
+                  className={`h-7 w-7  ${
+                    navbarColor ? " text-black  " : " text-white"
+                  }`}
+                />
               )}
             </div>
 
@@ -68,29 +68,16 @@ export default function Navbar() {
               }`}
             >
               {menuItems.map((item) => {
-                const key = Object.keys(item)[0];
                 return (
-                  <div
-                    className="my-5 lg:my-0 md:pl-0 hover:scale-110"
-                    key={key}
-                  >
-                    <NavLink
-                      to={Object.values(item)[0]}
-                      className="hover:text-orange-500 hover:scale-110 font-bold text-xl  "
-                    >
-                      {Object.keys(item)[0]}
-                      {/* {item} */}
-                    </NavLink>
+                  <div className="my-5 lg:my-0 md:pl-0 hover:scale-110">
+                    <p className="hover:text-orange-500 hover:scale-110 font-bold text-xl cursor-pointer  ">
+                      {item}
+                    </p>
                   </div>
                 );
               })}
             </div>
-            <button
-              className="hidden   md:block p-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-md text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110"
-              onClick={() => {
-                navigate("/contact");
-              }}
-            >
+            <button className="hidden   md:block p-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-md text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110">
               {" "}
               Contact me
             </button>
