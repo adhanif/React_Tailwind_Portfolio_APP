@@ -67,9 +67,12 @@ export default function Navbar() {
                 !isDiplayed ? "top-12 hidden md:flex" : "top-[-490px]"
               }`}
             >
-              {menuItems.map((item) => {
+              {menuItems.map((item, index) => {
                 return (
-                  <div className="my-5 lg:my-0 md:pl-0 hover:scale-110">
+                  <div
+                    key={index}
+                    className="my-5 lg:my-0 md:pl-0 hover:scale-110"
+                  >
                     <p className="hover:text-orange-500 hover:scale-110 font-bold text-xl cursor-pointer  ">
                       {item}
                     </p>
