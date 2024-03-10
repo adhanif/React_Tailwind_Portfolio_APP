@@ -7,7 +7,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 export default function Aboutme() {
   return (
     <>
-      <div className='container flex flex-col  justify-between md:px-8   mx-auto mt-4  space-y-12 md:py-10  md:space-y-0'>
+      <div id="about"  className='container flex flex-col  justify-between md:px-8   mx-auto mt-4  space-y-12 md:py-10  md:space-y-0'>
         <div className='mb-12'>
           <h1 className='text-center lg:text-left text-3xl md:text-6xl font-semibold mb-7 mt-5'>
             About <span className='text-orange-500'>me</span>

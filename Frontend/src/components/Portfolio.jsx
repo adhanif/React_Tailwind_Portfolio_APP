@@ -7,7 +7,7 @@ import { Projects } from '../../src/data/data';
 
 export default function Portfolio() {
   return (
-    <>
+    <div id='projects'>
       <h1 className=' mt-10 md:mt-20 font-bold text-3xl md:text-6xl text-center underline underline-offset-8 decoration-red-900 '>
         Projects
       </h1>
@@ -43,6 +43,6 @@ export default function Portfolio() {
           <ProjectCard heading={"IP Address Geolocation"} img={map} />
         </AnimationOnScroll> */}
       </div>
-    </>
+    </div>
   );
 }
