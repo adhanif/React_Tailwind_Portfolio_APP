@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import ToggleColorMode from '../components/ToggleColorMode';
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
@@ -105,13 +106,17 @@ export default function Navbar() {
                 );
               })}
             </div>
-            <button
-              className='hidden md:block py-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-md text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110'
-              onClick={() => handleScrollSection('contact')}
-            >
-              {' '}
-              Contact me
-            </button>
+            <div className='flex flex-row items-center '>
+              <ToggleColorMode />
+
+              <button
+                className='hidden md:block py-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-md text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110'
+                onClick={() => handleScrollSection('contact')}
+              >
+                {' '}
+                Contact me
+              </button>
+            </div>
           </div>
         </div>
       </nav>

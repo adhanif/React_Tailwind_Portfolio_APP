@@ -27,13 +27,26 @@ export default function Scroller() {
   }, [handleVisibility]);
 
   return (
-    <div className={`${isVisible ? 'opacity-1' : 'hidden'}`}>
-      <img
-        src={scrollUp}
-        alt='scroller'
-        className=' h-8 rounded-full fixed bottom-5 right-5 transition-opacity duration-300 ease-in-out cursor-pointer  bg-white hover:bg-white opacity-1'
-        onClick={handleScrollToTop}
-      />
+    <div
+      className={`${
+        isVisible ? 'opacity-1' : 'hidden'
+      } z-50  p-2.5 fixed   bottom-5 right-4 bg-white flex justify-center items-center border-r rounded-full shadow-md shadow-gray-950 hover:bg-[#F5F8FD] cursor-pointer transition-opacity duration-300 ease-in-out`}
+      onClick={handleScrollToTop}
+    >
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        strokeWidth='1.5'
+        stroke='currentColor'
+        className='w-6 h-6'
+      >
+        <path
+          strokeLinecap='round'
+          strokeLinejoin='round'
+          d='m4.5 15.75 7.5-7.5 7.5 7.5'
+        />
+      </svg>
     </div>
   );
 }
