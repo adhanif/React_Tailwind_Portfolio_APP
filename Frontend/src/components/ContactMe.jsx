@@ -5,7 +5,8 @@ export default function ContactMe() {
     <>
       <div
         id='contact'
-        className='isolate bg-white bg-opacity-0 px-6 py-20 sm:py-32 lg:px-6'
+        className=' bg-white bg-opacity-0 
+       p-20  '
       >
         <div
           className='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'
