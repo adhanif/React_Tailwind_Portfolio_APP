@@ -2,6 +2,12 @@ import diabetes from '../img/diabetes.avif';
 import map from '../img/maps.jpg';
 import hero from '../img/hero.jpg';
 
+import facebook from '../img/facebook.svg';
+import xing from '../img/logo-xing.svg';
+import linkedin from '../img/linkedin.svg';
+import instagram from '../img/instagram.svg';
+import github from '../img/github.svg';
+
 export const Projects = [
   {
     id: 1,
@@ -32,5 +38,28 @@ export const Projects = [
     demo: 'https://personal-weather-station.netlify.app/',
     git: 'https://github.com/husham007/personalized-weather-station',
     className: 'text-white',
+  },
+];
+
+export const iconsData = [
+  {
+    src: facebook,
+    href: '#',
+  },
+  {
+    src: xing,
+    href: 'https://www.xing.com/profile/Adnan_hanif5/cv',
+  },
+  {
+    src: github,
+    href: 'https://github.com/adhanif',
+  },
+  {
+    src: linkedin,
+    href: 'https://www.linkedin.com/in/adnan-hanif/',
+  },
+  {
+    src: instagram,
+    href: 'https://www.instagram.com/danilonewarrior/',
   },
 ];
