@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { useTheme } from '../contextApi/ThemeContext';
 
 export default function ToggleColorMode() {
   const [showIcon, setShowIcon] = useState(true);
+  const { toggleTheme } = useTheme();
 
   const handleClick = () => {
     setShowIcon((prev) => !prev);
+    toggleTheme();
   };
 
   return (

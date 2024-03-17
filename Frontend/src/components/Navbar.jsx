@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import ToggleColorMode from '../components/ToggleColorMode';
+import { useTheme } from '../contextApi/ThemeContext';
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
+  const { theme } = useTheme();
 
   const changeNavBackground = () => {
     if (window.scrollY >= 90) {

@@ -6,17 +6,21 @@ import Aboutme from './components/Aboutme';
 import ContactMe from './components/ContactMe';
 import Portfolio from './components/Portfolio';
 import Scroller from './components/Scroller';
+import { useTheme } from './contextApi/ThemeContext';
 
 function App() {
+  const { theme } = useTheme();
   return (
     <>
-      <HeroSection />
-      <Scroller />
-      <Aboutme />
-      <SkillSection />
-      <Portfolio />
-      <ContactMe />
-      <Footer />
+      <div className={`${theme === 'dark' ? 'bg-black' : 'bg-#f5f8fd'}`}>
+        <HeroSection />
+        <Scroller />
+        <Aboutme />
+        <SkillSection />
+        <Portfolio />
+        <ContactMe />
+        <Footer />
+      </div>
     </>
   );
 }
