@@ -3,7 +3,6 @@ import scrollUp from '../img/scroll.png';
 
 export default function Scroller() {
   const [isVisible, setIsVisible] = useState(false);
-  //   className={`${isVisible} ? visible: invisible`}
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -30,7 +29,7 @@ export default function Scroller() {
     <div
       className={`${
         isVisible ? 'opacity-1' : 'hidden'
-      } z-50  p-2.5 fixed   bottom-5 right-4 bg-white flex justify-center items-center border-r rounded-full shadow-md shadow-gray-950 hover:bg-[#F5F8FD] cursor-pointer transition-opacity duration-300 ease-in-out`}
+      } z-50  p-2.5 fixed   bottom-5 right-4 bg-white flex justify-center items-center border-r rounded-full shadow-md shadow-gray-950 hover:bg-[#F5F8FD] cursor-pointer transition-opacity duration-300 ease-in-out text-black`}
       onClick={handleScrollToTop}
     >
       <svg

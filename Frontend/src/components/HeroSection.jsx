@@ -1,12 +1,6 @@
 import React from 'react';
-import hero from '../img/hero.jpg';
 import portfolioImage from '../img/portfolio.jpeg';
 import Typewriter from 'typewriter-effect';
-import SkillsCard from '../components/SkillsCard';
-import webdesign from '../img/web-design.svg';
-import webdevelopment from '../img/web-development2.svg';
-import responsivedesign from '../img/responsive-design.svg';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Navbar from './Navbar';
 
 export default function HeroSection() {
@@ -43,22 +37,6 @@ export default function HeroSection() {
           </span>
         </div>
       </div>
-
-      {/* <h1 className="mt-20 font-bold text-3xl md:text-6xl  text-center underline underline-offset-8 decoration-red-900 ">
-        Services
-      </h1>
-      <div className="md:container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10    items-center md:px-8 mx-auto mt-20 mb-20 justify-items-center  ">
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
-          {" "}
-          <SkillsCard logo={webdevelopment} heading={"WEB DEVELOPMENT"} />
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
-          <SkillsCard logo={webdesign} heading={"WEB DESIGN"} />
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
-          <SkillsCard logo={responsivedesign} heading={"RESPONSIVE DESIGN"} />
-        </AnimationOnScroll>
-      </div> */}
     </>
   );
 }
