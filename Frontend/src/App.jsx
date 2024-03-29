@@ -12,7 +12,11 @@ function App() {
   const { theme } = useTheme();
   return (
     <>
-      <div className={`${theme === 'dark' ? 'bg-black' : 'bg-#f5f8fd'}`}>
+      <div
+        className={`${
+          theme === 'dark' ? 'bg-[#121212] text-white' : 'bg-#f5f8fd '
+        }`}
+      >
         <HeroSection />
         <Scroller />
         <Aboutme />

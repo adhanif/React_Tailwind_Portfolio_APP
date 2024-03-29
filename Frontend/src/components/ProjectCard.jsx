@@ -40,7 +40,9 @@ export default function ProjectCard({
           </div>
         </div>
       </div>
-      <h1 className='font-bold text-2xl p-5 text-center'>{heading}</h1>
+      <h1 className='font-bold    md:text-lg lg:text-xl p-5 text-center'>
+        {heading}
+      </h1>
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import html5 from '../img/html5.svg';
-import css3 from '../img/css3.svg';
 import javascript from '../img/javascript-1.svg';
 import react from '../img/react.svg';
 import expressJS from '../img/expressJS.svg';
@@ -10,34 +8,31 @@ import mongodb from '../img/mongodb.svg';
 import nodeJs from '../img/nodejs.svg';
 import sql from '../img/sql.svg';
 import python from '../img/python.svg';
-import figma from '../img/figma.svg';
 import typescript from '../img/typescript.svg';
+import cSharp from '../img/csharp.svg';
+import redux from '../img/redux.svg';
+import git from '../img/git.svg';
 
 export const skillData = [
   {
     logo: typescript,
     heading: 'TYPESCRIPT',
   },
-
   {
-    logo: html5,
-    heading: 'HTML5',
-  },
-  {
-    logo: css3,
-    heading: 'CSS3',
+    logo: cSharp,
+    heading: 'C#',
   },
   {
     logo: javascript,
     heading: 'JAVASCRIPT',
   },
   {
-    logo: python,
-    heading: 'PYTHON',
-  },
-  {
     logo: react,
     heading: 'REACT',
+  },
+  {
+    logo: redux,
+    heading: 'REDUX',
   },
   {
     logo: expressJS,
@@ -57,18 +52,22 @@ export const skillData = [
   },
   {
     logo: materialUI,
-    heading: 'MATERIAL',
+    heading: 'MATERIAL UI',
   },
   {
     logo: mongodb,
     heading: 'MONGODB',
   },
   {
+    logo: python,
+    heading: 'PYTHON',
+  },
+  {
     logo: sql,
     heading: 'SQL',
   },
   {
-    logo: figma,
-    heading: 'FIGMA',
+    logo: git,
+    heading: 'GIT',
   },
 ];

@@ -1,6 +1,7 @@
 import diabetes from '../img/diabetes.avif';
 import map from '../img/maps.jpg';
 import hero from '../img/hero.jpg';
+import hero2 from '../img/hero2.jpg';
 import facebook from '../img/facebook.svg';
 import xing from '../img/logo-xing.svg';
 import linkedin from '../img/linkedin.svg';
@@ -8,6 +9,16 @@ import instagram from '../img/instagram.svg';
 import github from '../img/github.svg';
 
 export const Projects = [
+  {
+    id: 4,
+    img: hero2,
+    detail:
+      'E-commerce Fashion ADN is a TypeScript and Redux Toolkit-powered frontend project that connects to the FakeAPI to create a dynamic e-commerce platform. The project includes features like product listing, individual product pages, user profiles (accessible upon login), and a shopping cart (implemented as a page or modal)',
+    title: 'E-commerce Fashion',
+    demo: 'https://ecommerce-fashion-adn.netlify.app/',
+    git: 'https://github.com/adhanif/E-commerce-ADN',
+    className: 'text-gray-900',
+  },
   {
     id: 1,
     img: diabetes,
