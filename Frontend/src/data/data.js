@@ -8,7 +8,7 @@ import linkedin from '../img/linkedin.svg';
 import instagram from '../img/instagram.svg';
 import github from '../img/github.svg';
 import netflix from '../img/netflix.png';
-import shop from '../img/ShopNest.png';
+import shop from '../img/shopNest.png';
 
 export const Projects = [
   {
