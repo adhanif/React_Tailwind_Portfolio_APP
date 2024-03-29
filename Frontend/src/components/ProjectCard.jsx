@@ -16,14 +16,13 @@ export default function ProjectCard({
        '
     >
       <div className='w-full relative group overflow-hidden '>
-        <img className='w-full' src={img} alt='' />
-        <div className='flex flex-col space-y-5 opacity-0 group-hover:opacity-100 backdrop-filter backdrop-blur duration-300 absolute inset-x-0 bottom-0 justify-center text-xl  font-semibold h-full  p-8  hover:backdrop-grayscale-[4]'>
-          {/* hover:backdrop-blur-[100px] */}
+        <img className='w-full h-[15rem]' src={img} alt='' />
+        <div className='flex flex-col space-y-5 opacity-0 group-hover:opacity-100 backdrop-filter backdrop-blur duration-300 absolute inset-x-0 bottom-0 justify-center text-xl  font-semibold  p-8  hover:backdrop-grayscale-[4]'>
           <p className={`text-sm text-justify ${extraClass}`}>
             {' '}
             {projetDetail}{' '}
           </p>
-          {/* text-slate-900 */}
+
           <div className='flex justify-center space-x-10'>
             <a href={git} target='_blank' className='flex hover:scale-110'>
               <FaGithub

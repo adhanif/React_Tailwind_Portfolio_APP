@@ -18,9 +18,9 @@ export default function Portfolio() {
       
       items-center mt-20'
       >
-        {Projects.map((project) => {
+        {Projects.map((project, i) => {
           return (
-            <div key={project.id}>
+            <div key={i}>
               <AnimationOnScroll animateIn='animate__zoomIn ' duration={2}>
                 <ProjectCard
                   heading={project.title}

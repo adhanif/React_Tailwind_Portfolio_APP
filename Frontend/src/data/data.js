@@ -7,20 +7,29 @@ import xing from '../img/logo-xing.svg';
 import linkedin from '../img/linkedin.svg';
 import instagram from '../img/instagram.svg';
 import github from '../img/github.svg';
+import netflix from '../img/netflix.png';
+import shop from '../img/ShopNest.png';
 
 export const Projects = [
   {
-    id: 4,
     img: hero2,
     detail:
-      'E-commerce Fashion ADN is a TypeScript and Redux Toolkit-powered frontend project that connects to the FakeAPI to create a dynamic e-commerce platform. The project includes features like product listing, individual product pages, user profiles (accessible upon login), and a shopping cart (implemented as a page or modal)',
+      'E-commerce Fashion ADN is a TypeScript and Redux Toolkit-powered frontend project that connects to the FakeAPI to create a dynamic e-commerce platform.',
     title: 'E-commerce Fashion',
     demo: 'https://ecommerce-fashion-adn.netlify.app/',
     git: 'https://github.com/adhanif/E-commerce-ADN',
     className: 'text-gray-900',
   },
   {
-    id: 1,
+    img: netflix,
+    detail:
+      'This project is a Netflix clone built using React, React Router, and Vite. It aims to replicate the main functionalities and design of the popular streaming platform, Netflix.',
+    title: 'Netflix Clone',
+    demo: 'https://netflix-clone-new-me.netlify.app/',
+    git: 'https://github.com/adhanif/Netflix-clone',
+    className: 'text-white',
+  },
+  {
     img: diabetes,
     detail:
       'This is a full-stack App that uses ReactJS, Tailwind CSS, ExpressJS, MongoDB, React-Leaflet, React-Hook-Form and geoCoder. The application features user authentication and enables users to create, edit, and delete their own events, as well as view events created by others.',
@@ -29,8 +38,17 @@ export const Projects = [
     git: 'https://github.com/adhanif/MERN_Stack_Diabetes_APP',
     className: 'text-gray-900',
   },
+
   {
-    id: 2,
+    img: shop,
+    detail:
+      'This  project demonstrates an esimple e-commerce website providing high-quality products, fast delivery, and free shipping. Built with HTML and Sass, it emphasizes simplicity and style for an enhanced user experience.',
+    title: 'Shop Nest',
+    demo: 'https://adhanif.github.io/fs17-week1/',
+    git: 'https://github.com/adhanif/ShopNest',
+    className: 'text-white',
+  },
+  {
     img: map,
     detail:
       'IP Address Geolocation Viewer is a web application built using React, Leaflet, and other technologies, allowing users to discover information about their IP address and its geographical location.',
@@ -40,7 +58,6 @@ export const Projects = [
     className: 'text-white',
   },
   {
-    id: 3,
     img: hero,
     detail:
       'Personalized Weather Station (PWS) is a full-stack web application that visually represents weather for your favorite locations. Whether you are a weather enthusiast or curious about conditions elsewhere, PWS offers an interactive tracking experience.',
