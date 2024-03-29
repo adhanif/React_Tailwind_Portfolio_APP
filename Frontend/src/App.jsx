@@ -6,7 +6,7 @@ import Aboutme from './components/Aboutme';
 import ContactMe from './components/ContactMe';
 import Portfolio from './components/Portfolio';
 import Scroller from './components/Scroller';
-import { useTheme } from './contextApi/ThemeContext';
+import { useTheme } from '../src/components/contextApi/ThemeContext';
 
 function App() {
   const { theme } = useTheme();

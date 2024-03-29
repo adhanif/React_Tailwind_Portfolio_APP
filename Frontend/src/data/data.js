@@ -1,7 +1,6 @@
 import diabetes from '../img/diabetes.avif';
 import map from '../img/maps.jpg';
 import hero from '../img/hero.jpg';
-
 import facebook from '../img/facebook.svg';
 import xing from '../img/logo-xing.svg';
 import linkedin from '../img/linkedin.svg';
