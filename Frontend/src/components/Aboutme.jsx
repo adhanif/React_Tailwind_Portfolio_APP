@@ -1,6 +1,4 @@
 import React from 'react';
-import portrait from '../img/portrait4.jpg';
-import JobCard from './JobCard';
 import Typewriter from 'typewriter-effect';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
@@ -55,42 +53,7 @@ export default function Aboutme() {
           </div>
         </div>
       </div>
-      {/* <div
-        className="container grid grid-cols-6 gap-10  items-center justify-items-center md:px-8 mx-auto mt-20 mb-10 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 
-      
-      "
-      >
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
-          {" "}
-          <JobCard
-            job={"Freelancer"}
-            position={"Full Stack Developer"}
-            detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus quia, nulla! Maiores et perferendis eaque,
-          exercitationem praesentium nihil.`}
-          />
-        </AnimationOnScroll>
-
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
-          <JobCard
-            job={"Designer ABC"}
-            position={"Front End Developer"}
-            detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus quia, nulla! Maiores et perferendis eaque,
-          exercitationem praesentium nihil.`}
-          />
-        </AnimationOnScroll>
-
-        <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
-          <JobCard
-            job={"Webworks"}
-            position={"Back End Developer"}
-            detail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus quia, nulla! Maiores et perferendis eaque,
-          exercitationem praesentium nihil.`}
-          />
-        </AnimationOnScroll>
-      </div> */}
+     
     </>
   );
 }

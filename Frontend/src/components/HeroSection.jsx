@@ -1,19 +1,18 @@
 import React from 'react';
 import portfolioImage from '../img/portfolio.jpeg';
 import Typewriter from 'typewriter-effect';
-import Navbar from './Navbar';
+import Navbar from './navbar/Navbar';
 
 export default function HeroSection() {
   return (
     <>
       <div
-        className='flex justify-center relative overflow-hidden  bg-no-repeat bg-right-bottom md:bg-center bg-cover  h-[300px] md:h-[810px]  md:bg-fixed'
+        className='flex justify-center relative overflow-hidden  bg-no-repeat bg-right-bottom md:bg-center bg-cover h-[400px] md:h-[810px]  md:bg-fixed'
         style={{
           backgroundImage: `url(${portfolioImage})`,
         }}
       >
         <Navbar />
-
         <div
           className='flex flex-col justify-center items-center absolute bottom-0 left-0 right-0 top-0  overflow-hidden bg-fixed bg-opacity-50   '
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
