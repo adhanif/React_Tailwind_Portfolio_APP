@@ -12,6 +12,9 @@ import typescript from '../img/typescript.svg';
 import cSharp from '../img/csharp.svg';
 import redux from '../img/redux.svg';
 import git from '../img/git.svg';
+import netcore from '../img/netcore.png';
+import postgre from '../img/postgre.svg';
+import docker from '../img/docker.svg';
 
 export const skillData = [
   {
@@ -69,5 +72,17 @@ export const skillData = [
   {
     logo: git,
     heading: 'GIT',
+  },
+  {
+    logo: netcore,
+    heading: 'ASP.Net Core',
+  },
+  {
+    logo: postgre,
+    heading: 'Postgresql',
+  },
+  {
+    logo: docker,
+    heading: 'Docker',
   },
 ];
