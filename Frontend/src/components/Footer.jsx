@@ -1,7 +1,7 @@
 import React from 'react';
 import logowhite from '../img/logowhite.svg';
 
-import { iconsData } from '../data/data';
+import { iconsData } from '../constants/data';
 
 export default function Footer() {
   const today = new Date();
@@ -12,6 +12,7 @@ export default function Footer() {
     { Skills: 'skills' },
     { Projects: 'projects' },
   ];
+
   const handleScrollSection = (id) => {
     const sectionElement = document.getElementById(id);
     if (sectionElement) {
@@ -35,17 +36,8 @@ export default function Footer() {
             <div className='flex justify-center space-x-4 '>
               {iconsData.map((item, i) => {
                 return (
-                  <a
-                    href={item.href}
-                    className='hover:scale-125 '
-                    target='_blank'
-                    key={i}
-                  >
-                    <img
-                      src={item.src}
-                      alt='facebook'
-                      className='h-8 bg-white rounded-md '
-                    />
+                  <a href={item.href} className='hover:scale-125 ' target='_blank' key={i}>
+                    <img src={item.src} alt='facebook' className='h-8 bg-white rounded-md ' />
                   </a>
                 );
               })}
@@ -60,8 +52,7 @@ export default function Footer() {
                     <p
                       className='flex flex-col space-y-3 text-white hover:text-brightRed hover:scale-110 cursor-pointer'
                       onClick={() => handleScrollSection(value)}
-                      key={i}
-                    >
+                      key={i}>
                       {key}
                     </p>
                   );
@@ -72,8 +63,7 @@ export default function Footer() {
             <div className='flex flex-col space-y-3 text-white  md:mb-20'>
               <p
                 className='flex flex-col space-y-3 text-white hover:text-brightRed hover:scale-110 cursor-pointer'
-                onClick={() => handleScrollSection('contact')}
-              >
+                onClick={() => handleScrollSection('contact')}>
                 Contact
               </p>
 

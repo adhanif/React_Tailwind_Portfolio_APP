@@ -1,7 +1,7 @@
 import React from 'react';
 import SkillsCard from './SkillsCard';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { skillData } from '../data/skillData';
+import { skillData } from '../constants/skillData';
 
 export default function SkillSection() {
   return (
