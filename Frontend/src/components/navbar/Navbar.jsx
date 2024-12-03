@@ -63,13 +63,16 @@ export default function Navbar() {
         }`}>
         <div className='container mx-auto'>
           <div className='flex flex-col md:flex-row  justify-between md:items-center'>
-            <div className=''>
+            <div className='flex justify-between'>
               <h1
                 className={`font-bold text-xl lg:text-3xl                 
                 ${isDiplayed ? 'text-black' : `${navbarColor ? ' text-black' : 'text-white'}`}
                 `}>
                 Adnan <span className='text-orange-500'>Hanif</span>
               </h1>
+              <div className={`${!isDiplayed ? ' hidden' : ''}`}>
+                <LanguageSwitcher />
+              </div>
             </div>
 
             {/* Menu icons  */}
@@ -119,30 +122,29 @@ export default function Navbar() {
             </div>
           </div>
           {/* mobile version */}
-          <div>
-            <div
-              className={`flex flex-col md:hidden md:space-x-6 lg:space-x-10 translate-all  Z-[-1] md:Z-auto duration-700 ease-in ${
-                !isDiplayed ? ' hidden md:flex' : ''
-              }`}>
-              {menuItems.map((item, index) => {
-                const [key, value] = Object.entries(item)[0];
-                return (
-                  <div key={index} className='my-3 lg:my-0 md:pl-0 '>
-                    <p
-                      className={`"hover:text-orange-500 md:hover:scale-110 font-bold  text-xs md:text-xl cursor-pointer text-black`}
-                      onClick={() => handleScrollSection(value)}>
-                      {key}
-                    </p>
-                  </div>
-                );
-              })}
-              <ToggleColorMode />
-              <button
-                className='my-4 py-2 px-4 text-white bg-red-900 hover:bg-orange-500 rounded-md text-center hover:bg-brightRedLigh focus:outline-none'
-                onClick={() => handleScrollSection('contact')}>
-                Contact me
-              </button>
-            </div>
+
+          <div
+            className={`flex flex-col md:hidden md:space-x-6 lg:space-x-10 translate-all  Z-[-1] md:Z-auto duration-700 ease-in ${
+              !isDiplayed ? ' hidden md:flex' : ''
+            }`}>
+            {menuItems.map((item, index) => {
+              const [key, value] = Object.entries(item)[0];
+              return (
+                <div key={index} className='my-3 lg:my-0 md:pl-0 '>
+                  <p
+                    className={`"hover:text-orange-500 md:hover:scale-110 font-bold  text-xs md:text-xl cursor-pointer text-black`}
+                    onClick={() => handleScrollSection(value)}>
+                    {key}
+                  </p>
+                </div>
+              );
+            })}
+            <ToggleColorMode />
+            <button
+              className='my-4 py-2 px-4 text-white bg-red-900 hover:bg-orange-500 rounded-md text-center hover:bg-brightRedLigh focus:outline-none'
+              onClick={() => handleScrollSection('contact')}>
+              Contact me
+            </button>
           </div>
         </div>
       </nav>
