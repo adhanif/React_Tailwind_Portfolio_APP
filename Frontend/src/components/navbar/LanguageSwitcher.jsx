@@ -15,20 +15,21 @@ const LanguageSwitcher = () => {
     setIsOpen(false);
   };
 
+  
+
   return (
-    <div className='relative inline-block'>
+    <div className='relative inline-block' ref={ref}>
       <button
         className='flex items-center justify-center rounded-md bg-red-900 py-2 px-3 border border-transparent text-base text-white shadow-md transition-all hover:shadow-lg mr-2'
         type='button'
         onClick={() => setIsOpen(!isOpen)}>
         {selectedLanguage === 'English' ? 'EN' : 'FI'}
-        <ChevronDownIcon className='h-6 w-5 text-white ml-1' />
+        <ChevronDownIcon className={`h-6 w-5 text-white ml-1 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
       {isOpen && (
         <ul
           role='menu'
-          className='absolute z-10 mt-2 w-max border border-slate-200 bg-white p-1.5 shadow-lg focus:outline-none top-full left-0'
-          ref={ref}>
+          className='absolute z-10 mt-2 w-max border border-slate-200 bg-white p-1.5 shadow-lg focus:outline-none top-full left-0'>
           {languages.map((lan) => (
             <li
               key={lan}
