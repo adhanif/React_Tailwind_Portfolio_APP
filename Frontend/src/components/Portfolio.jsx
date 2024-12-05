@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { Projects } from '../../src/data/data';
+import { Projects } from '../../src/constants/data';
 
 export default function Portfolio() {
   return (
