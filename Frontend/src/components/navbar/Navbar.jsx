@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { useTranslation } from 'react-i18next';
 
 import ToggleColorMode from '../ToggleColorMode';
 import LanguageSwitcher from './LanguageSwitcher';
 
-const menuItems = [
-  { Home: 'home' },
-  { About: 'about' },
-  { Skills: 'skills' },
-  { Projects: 'projects' },
-];
+const menuItems = ['home', 'about', 'skills', 'projects'];
 
 export default function Navbar() {
   const [isDiplayed, setIsDiplayed] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
+  const { t } = useTranslation();
 
   const changeNavBackground = () => {
     if (window.scrollY >= 90) {
@@ -26,10 +23,11 @@ export default function Navbar() {
   window.addEventListener('scroll', changeNavBackground);
 
   function handleClick() {
-    setIsDiplayed(!isDiplayed);
+    setIsDiplayed((prev) => !prev);
   }
 
   const handleScrollSection = (id) => {
+    console.log(id);
     const sectionElement = document.getElementById(id);
     const offset = 90;
     if (sectionElement) {
@@ -70,9 +68,6 @@ export default function Navbar() {
                 `}>
                 Adnan <span className='text-orange-500'>Hanif</span>
               </h1>
-              <div className={`${!isDiplayed ? ' hidden' : ''}`}>
-                <LanguageSwitcher />
-              </div>
             </div>
 
             {/* Menu icons  */}
@@ -94,15 +89,14 @@ export default function Navbar() {
             <div
               className={`hidden md:flex  md:space-x-6 lg:space-x-10 translate-all  Z-[-1] md:Z-auto duration-700 ease-in `}>
               {menuItems.map((item, index) => {
-                const [key, value] = Object.entries(item)[0];
                 return (
-                  <div key={index} className='my-5 lg:my-0 md:pl-0 '>
+                  <div key={item} className='my-5 lg:my-0 md:pl-0 '>
                     <p
                       className={`"hover:text-orange-500 md:hover:scale-110 font-bold  text-xs md:text-xl cursor-pointer ${
                         navbarColor ? ' text-black  ' : ' text-white'
                       }`}
-                      onClick={() => handleScrollSection(value)}>
-                      {key}
+                      onClick={() => handleScrollSection(item)}>
+                      {t(`navbar:navbar.${item}`)}
                     </p>
                   </div>
                 );
@@ -117,7 +111,7 @@ export default function Navbar() {
                 className='hidden md:block py-2 px-4  text-white bg-red-900 hover:bg-orange-500  rounded-md text-center  hover:bg-brightRedLigh focus:outline-none hover:scale-110'
                 onClick={() => handleScrollSection('contact')}>
                 {' '}
-                Contact me
+                {t('navbar:navbar.contact')}
               </button>
             </div>
           </div>
@@ -127,23 +121,25 @@ export default function Navbar() {
             className={`flex flex-col md:hidden md:space-x-6 lg:space-x-10 translate-all  Z-[-1] md:Z-auto duration-700 ease-in ${
               !isDiplayed ? ' hidden md:flex' : ''
             }`}>
-            {menuItems.map((item, index) => {
-              const [key, value] = Object.entries(item)[0];
+            {menuItems.map((item) => {
               return (
-                <div key={index} className='my-3 lg:my-0 md:pl-0 '>
+                <div key={item} className='my-3 lg:my-0 md:pl-0 '>
                   <p
                     className={`"hover:text-orange-500 md:hover:scale-110 font-bold  text-xs md:text-xl cursor-pointer text-black`}
-                    onClick={() => handleScrollSection(value)}>
-                    {key}
+                    onClick={() => handleScrollSection(item)}>
+                    {t(`navbar:navbar.${item}`)}
                   </p>
                 </div>
               );
             })}
-            <ToggleColorMode />
+            <div className='flex items-center'>
+              <ToggleColorMode />
+              <LanguageSwitcher />
+            </div>
             <button
               className='my-4 py-2 px-4 text-white bg-red-900 hover:bg-orange-500 rounded-md text-center hover:bg-brightRedLigh focus:outline-none'
               onClick={() => handleScrollSection('contact')}>
-              Contact me
+              {t('navbar:navbar.contact')}
             </button>
           </div>
         </div>
