@@ -1,22 +1,20 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import { resources } from './resources';
+import { detectionOptions } from './config/detection';
+import { i18nOptions } from './config/option';
+
+export const SUPPORTED_LANGUAGES = Object.keys(resources);
 
 void i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources: {
-      en: {
-        translation: {
-          'Welcome to React': 'Welcome to React and react-i18next',
-        },
-      },
-      fi: {
-        translation: {
-          'Welcome to React': 'Tervetuloa Reactiin ja react-i18nexten',
-        },
-      },
-    },
-    
+    resources,
+    supportedLngs: SUPPORTED_LANGUAGES,
+    detection: detectionOptions,
+    ...i18nOptions,
   });
+
+export default i18n;
