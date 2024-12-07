@@ -11,9 +11,7 @@ const LanguageSwitcher = () => {
   const ref = useClickOutside(() => setIsOpen(false));
   const { selectedLanguage, handleLanguageChange, getLanguageName } = useLanguage();
 
-  console.log(selectedLanguage.code);
   const handleLanguage = async (language) => {
-    console.log(language);
     try {
       await handleLanguageChange(language);
       setIsOpen(false);

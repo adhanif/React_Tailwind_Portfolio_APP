@@ -1,3 +1,9 @@
 {
-  "navbar": {}
+  "navbar": {
+    "home": "Koti",
+    "about": "Tietoa",
+    "projects": "Projektit",
+    "skills": "Taidot",
+    "contact": "Yhteystiedot"
+  }
 }
